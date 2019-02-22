@@ -1,0 +1,160 @@
+/**
+ * Typography
+ */
+
+@import './vars.module.css';
+
+/* Material Design Typography class */
+/* https://material.io/design/typography/the-type-system.html#type-scale.html */
+
+/* mdHeadline1 */
+.mdHeadline1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 96px;
+    font-weight: 300;
+    letter-spacing: -1.5px;
+    line-height: 112px;
+}
+
+/* mdHeadline2 */
+.mdHeadline2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    line-height: 71px; /* TODO confirm */
+}
+
+/* mdHeadline3 */
+.mdHeadline3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 57px;
+}
+
+/* mdHeadline4 */
+.mdHeadline4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    line-height: 40px;
+}
+
+/* mdHeadline5 */
+.mdHeadline5 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+
+/* mdHeadline6 */
+.mdHeadline6 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+}
+/* mdSubtitle1 */
+
+.mdSubtitle1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+}
+
+/* mdSubtitle2 */
+.mdSubtitle2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+}
+
+/* mdBody1 */
+.mdBody1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+}
+
+/* mdBody2 */
+.mdBody2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+}
+
+/* mdButton */
+.mdButton {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    line-height: 16px;
+}
+
+/* mdCaption */
+.mdCaption {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    line-height: 16px;
+}
+
+/* Xena Specific */
+/* Hero */
+.hero {
+    color: var(--accentgreen);
+    font-family: "Roboto", sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 80px;
+    margin-bottom: 16px;
+}
+
+/* Hero Subtitle */
+.heroSubtitle {
+    composes: mdHeadline4;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+/**
+ * Xena specific breakpoint
+ */
+@media screen and (max-width: 992px) {
+
+    /* Hero Subtitle */
+    .heroSubtitle {
+        font-size: 20px;
+        letter-spacing: 0.15px;
+        line-height: 24px;
+    }
+}

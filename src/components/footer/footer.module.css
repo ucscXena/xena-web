@@ -1,0 +1,92 @@
+/*
+ * UCSC Xena Web
+ * https://xena.ucsc.edu/
+ *
+ * UCSC Xena Web footer component.
+ */
+@import '../../styles/vars.module.css';
+
+/* Links and disclaimer */
+.footerLinks, .disclaimer, .footerLinks > div, .disclaimer > span {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Links container */
+.footerLinks {
+    padding: 48px 8px;
+}
+
+/* Disclaimer container */
+.disclaimer {
+    padding: 16px;
+}
+
+/* Link and disclaimer alignment */
+.footerLinks > div, .disclaimer > span {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* Link - UCSC and socials */
+.footerLinks > div {
+    padding: 8px;
+}
+
+/* Socials */
+.footerLinks > div + div {
+    margin-top: 24px;
+}
+
+/* Link and social */
+.footerLinks a:not(:last-of-type) {
+    margin-bottom: 8px;
+}
+
+/* Link and social hover */
+.footerLinks a:hover {
+    color: var(--accentgreen);
+}
+
+/* Disclaimer */
+.disclaimer span + span {
+    margin-top: 8px;
+}
+
+/**
+ * Small Window +
+ * https://material.io/design/layout/responsive-layout-grid.html#breakpoints
+ */
+@media screen and (min-width: 960px) {
+
+    /* Links container */
+    .footerLinks, .footerLinks > div {
+        flex-direction: row;
+        width: unset;
+    }
+
+    .footerLinks {
+        justify-content: space-between;
+    }
+
+    /* Link and social */
+    .footerLinks a:not(:last-of-type) {
+        margin: 0;
+    }
+
+    /* Dot */
+    .footerLinks a:not(:last-of-type):after {
+        content: "\b7";
+        margin: 0 16px;
+    }
+
+    .footerLinks > div + div {
+        margin-top: 0;
+    }
+
+    /* Disclaimer */
+    .disclaimer span {
+        text-align: left;
+    }
+}

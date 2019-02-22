@@ -1,0 +1,140 @@
+/*
+ * UCSC Xena Web
+ * https://xena.ucsc.edu/
+ *
+ * Style definitions specific to the UCSC Xena Web home component.
+ */
+
+/* Jumbotron */
+.jumbotron {
+    padding-bottom: 30px;
+    padding-top: 16px;
+    position: relative; /* Positions public/private image */
+    text-align: center;
+}
+
+/* Jumbotron image */
+.jumbotron img {
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Overview */
+.overview {
+    margin-bottom: 56px;
+}
+
+/* Public/Private */
+.publicPrivate {
+    position: relative; /* Positions green background */
+}
+
+.publicPrivate > div {
+    flex-direction: column;
+    padding: 0; /* Overrides padding on wrapper */
+}
+
+/* Public/Private */
+.public, .private {
+    padding: 72px 16px;
+}
+
+/* Public */
+.public {
+    background-color: var(--accentgreen);
+}
+
+/* Private */
+.private {
+    background-color: var(--primary);
+}
+
+.public h6, .private h6 {
+    margin-bottom: 50px;
+}
+
+/**
+ * Xena specific breakpoint
+ */
+@media screen and (min-width: 992px) {
+
+    .jumbotron {
+        padding-bottom: 32px;
+        padding-top: 32px;
+        text-align: left;
+    }
+
+    .jumbotron img {
+        margin-top: 0;
+        max-width: 665px;
+        position: absolute;
+        right: 16px;
+        top: 72px;
+        width: 50%;
+    }
+
+    .publicPrivate > div {
+        flex-direction: row;
+        padding: 0 16px;
+    }
+
+    /* Private background */
+    .publicPrivate::after {
+        background-color: var(--primary);
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: skew(-20deg, 0deg);
+        transform-origin: bottom left;
+        width: 60%;
+    }
+
+    /* Public/Private */
+    .public, .private {
+        background-color: unset;
+        padding-bottom: 142px;
+        padding-top: 116px;
+    }
+
+    /* Private */
+    .private {
+        margin-left: calc(100% / 12 * 2);
+        z-index: 1;
+    }
+
+    /* Subscribe */
+    .subscribe h6 {
+        align-self: center;
+        margin: 0;
+        width: 50%;
+    }
+
+    /* Subscribe h6 */
+    .subscribe h6 span {
+        display: block;
+        font: inherit;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+
+    .publicPrivate::after {
+        transform: skew(-10deg, 0);
+        width: 57%;
+    }
+}
+
+/**
+ * Medium Window +
+ * https://material.io/design/layout/responsive-layout-grid.html#breakpoints
+ */
+@media screen and (min-width: 1280px) {
+
+    .jumbotron img {
+        right: 128px;
+        width: 50%;
+    }
+}

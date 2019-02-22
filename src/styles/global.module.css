@@ -1,0 +1,176 @@
+/*
+ * UCSC Xena Web
+ * https://xena.ucsc.edu/
+ *
+ * Style definitions specific to the UCSC Xena Web root component.
+ */
+@import '../styles/vars.module.css';
+
+.bgGreen {
+    background-color: var(--primary);
+}
+
+.bgAccentGreen {
+    background-color: var(--accentgreen);
+}
+
+.bgPaleGreen {
+    background-color: var(--palegreen);
+}
+
+.bgPeach {
+    background-color: var(--accentpeach);
+}
+
+.bgPeach h2, .bgPeach h3, .bgPeach h5, .bgPeach p, .bgPeach a, .bgGreen a, .bgAccentGreen h5, .bgAccentGreen h6 {
+    color: var(--white);
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.wrapper.flex {
+    display: flex;
+}
+
+.row {
+    padding: 0 16px;
+    margin: 0 auto;
+    max-width: 1168px;
+}
+
+.rowFlexCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapperContent {
+    width: 100%;
+}
+
+.contentCol4, .contentCol7 {
+    width: 100%;
+}
+
+.section {
+    padding: 72px 0;
+}
+
+.section.large {
+    padding: 126px 0;
+}
+
+.section.separator {
+    border-top: 4px solid var(--xenagray);
+}
+
+.xenaButton {
+    composes: mdSubtitle2 from './xenaFonts.module.css';
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    height: 48px;
+    width: 214px;
+    padding: 0 16px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.xenaButton.small {
+    width: 158px;
+}
+
+.xenaButton.yellow {
+    background-color: var(--accentyellow);
+}
+
+.xenaButton.yellow:hover {
+    background-color: var(--accentpeach);
+    color: var(--white);
+}
+
+.xenaButton.white {
+    background-color: var(--white);
+    color: var(--accentpeach);
+}
+
+.xenaButton.peach, .xenaButton.learnMore {
+    background-color: var(--accentpeach);
+    color: var(--white);
+}
+
+.xenaButton.learnMore:hover {
+    background-color: var(--accentyellow);
+    color: var(--primary);
+}
+
+.xenaButton.peach:hover, .xenaButton.white:hover {
+    background-color: var(--accentyellow);
+    color: var(--primary);
+}
+
+.discoverImg {
+    display: none;
+}
+
+/**
+ * Xena specific breakpoint
+ */
+@media screen and (min-width: 992px) {
+
+    .wrapperContent {
+        margin-left: calc(100% / 12);
+        padding: 0 16px;
+    }
+
+    .contentCol4 {
+        max-width: 460px;
+        width: calc(100% / 12 * 4);
+    }
+
+    .contentCol7 {
+        width: calc(100% / 12 * 7);
+    }
+
+    .discoverImg {
+        display: flex;
+    }
+
+    .roundImage {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+    }
+
+    .xenaButton.learnMore {
+        background-color: var(--white);
+        color: var(--accentpeach);
+    }
+
+    .xenaButton.learnMore:hover {
+        background-color: var(--white);
+        color: var(--accentpeach);
+    }
+}
+
+/**
+ * Large Window +
+ * https://material.io/design/layout/responsive-layout-grid.html#breakpoints
+ */
+@media screen and (min-width: 1440px) {
+
+    .wrapper {
+        width: 1440px;
+    }
+
+    .wrapperContent {
+        margin-left: 120px;
+    }
+}

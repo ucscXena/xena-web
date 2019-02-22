@@ -1,0 +1,10 @@
+/*
+ * UCSC Xena Web
+ * https://xena.ucsc.edu/
+ *
+ * Style definitions specific to the UCSC Xena Web layout component.
+ */
+
+.noScroll {
+    overflow: hidden;
+}

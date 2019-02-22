@@ -1,0 +1,14 @@
+/**
+ * UCSC Xena Web Colors
+ */
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --primary: #1a535c;
+    --accentgreen: #4ecdc4;
+    --palegreen: #F7FFF7;
+    --accentpeach: #ff6b6b;
+    --accentyellow: #ffe66d;
+    --xenagray: #d8d8d8;
+}

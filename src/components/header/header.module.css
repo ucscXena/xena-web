@@ -1,0 +1,173 @@
+/*
+ * UCSC Xena Web
+ * https://xena.ucsc.edu/
+ *
+ * Style definitions specific to the UCSC Xena Web header component.
+ */
+
+@import '../../styles/vars.module.css';
+
+/* NavBar */
+.navBar {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    height: 125px;
+    justify-content: space-between;
+}
+
+/* Logo */
+.navBar img {
+    max-width: 225px;
+}
+
+/* Hamburger */
+.navBar .navBarMenu {
+    padding: 61px 20px;
+    z-index: 100;
+}
+
+/* Hamburger elements - closed state */
+.navBar .navBarMenu span, .navBar .navBarMenu span:before, .navBar .navBarMenu span:after {
+    background: none no-repeat scroll 0 0 var(--primary);
+    display: block;
+    height: 4px;
+    position: relative;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width: 24px;
+}
+
+/* Hamburger upper and lower element */
+.navBar .navBarMenu span:before, .navBar .navBarMenu span:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+
+/* Hamburger upper element */
+.navBar .navBarMenu span:before {
+    top: -8px;
+}
+
+/* Hamburger lower element */
+.navBar .navBarMenu span:after {
+    top: 8px;
+}
+
+/* Hamburger hover - upper element */
+.navBar .navBarMenu:hover span:before {
+    top: -10px;
+}
+
+/* Hamburger hover - lower element */
+.navBar .navBarMenu:hover span:after {
+    top: 10px;
+}
+
+/* Hamburger open - middle element */
+.navBar.open .navBarMenu span {
+    background-color: transparent !important;
+}
+
+/* Hamburger open - upper element */
+.navBar.open .navBarMenu span:before {
+    top: 0 !important;
+    transform: rotate(-45deg) !important;
+}
+
+/* Hamburger open - lower element */
+.navBar.open .navBarMenu span:after {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+/* Navigation links container */
+.navBar .navLinks {
+    display: none;
+}
+
+/* Navigation links container */
+.navBar.open .navLinks {
+    align-items: center;
+    animation: animateIn 0.5s 1;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 0;
+    opacity: 1;
+    overflow: scroll;
+    padding: 32px 0 64px;
+    position: fixed;
+    right: 0;
+    top: 125px;
+    z-index: 999;
+}
+
+/* Navigation link */
+.navBar.open .navLinks a {
+    font-weight: 300; /* overrides mdHeadline5 */
+    padding: 4px 0;
+}
+
+/* Animation menu open */
+@keyframes animateIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/**
+ * Small tablet, medium handset
+ * https://material.io/design/layout/responsive-layout-grid.html#breakpoints
+ */
+@media screen and (min-height: 719px) {
+
+    /* Navigation links container */
+    .navBar.open .navLinks {
+        padding: 32px 0 216px;
+    }
+}
+
+/**
+ * Xena specific breakpoint
+ */
+@media screen and (min-width: 992px) {
+
+    /* Hamburger */
+    .navBar .navBarMenu {
+        display: none;
+    }
+
+    /* Link container */
+    .navBar .navLinks {
+        align-items: center;
+        display: flex;
+        height: 100%;
+    }
+
+    /* Links */
+    .navBar .navLinks a {
+        align-content: center;
+        padding: 24px 0;
+    }
+
+    /* Links */
+    .navBar .navLinks a:not(:first-of-type) {
+        margin-left: 48px;
+    }
+}
+
+/**
+ * Medium Window +
+ * https://material.io/design/layout/responsive-layout-grid.html#breakpoints
+ */
+@media screen and (min-width: 1280px) {
+
+    /* Links */
+    .navBar .navLinks a:not(:first-of-type) {
+        margin-left: 72px;
+    }
+}
