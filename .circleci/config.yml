@@ -98,12 +98,14 @@ jobs:
     - image: circleci/node:10-jessie
     shell: /bin/bash --login
     steps:
-    - run: sudo apt-get install awscli
+    - run: sudo apt-get install python-pip
+    - run: sudo apt-get install python-dev
+    - run: pip install awscli --upgrade --user
+    - run: export PATH="~/.local/bin:$PATH"
     - checkout
     - attach_workspace:
         at: ~/ucscXena/xena-web
     - run: aws s3 sync --acl public-read public/ ${STAGING_BUCKET} --delete
-    - run: aws configure set preview.cloudfront true
     - run: aws cloudfront create-invalidation --distribution-id ${STAGING_DIST} --paths "/*"
   deploy-master:
     working_directory: ~/ucscXena/xena-web
@@ -111,12 +113,14 @@ jobs:
     - image: circleci/node:10-jessie
     shell: /bin/bash --login
     steps:
-    - run: sudo apt-get install awscli
+    - run: sudo apt-get install python-pip
+    - run: sudo apt-get install python-dev
+    - run: pip install awscli --upgrade --user
+    - run: export PATH="~/.local/bin:$PATH"
     - checkout
     - attach_workspace:
         at: ~/ucscXena/xena-web
     - run: aws s3 sync --acl public-read public/ ${MASTER_BUCKET} --delete
-    - run: aws configure set preview.cloudfront true
     - run: aws cloudfront create-invalidation --distribution-id ${MASTER_DIST} --paths "/*"
 workflows:
     version: 2
