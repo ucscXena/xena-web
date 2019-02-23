@@ -103,6 +103,7 @@ jobs:
     - attach_workspace:
         at: ~/ucscXena/xena-web
     - run: aws s3 sync --acl public-read public/ ${STAGING_BUCKET} --delete
+    - run: aws configure set preview.cloudfront true
     - run: aws cloudfront create-invalidation --distribution-id ${STAGING_DIST} --paths "/*"
   deploy-master:
     working_directory: ~/ucscXena/xena-web
@@ -115,6 +116,7 @@ jobs:
     - attach_workspace:
         at: ~/ucscXena/xena-web
     - run: aws s3 sync --acl public-read public/ ${MASTER_BUCKET} --delete
+    - run: aws configure set preview.cloudfront true
     - run: aws cloudfront create-invalidation --distribution-id ${MASTER_DIST} --paths "/*"
 workflows:
     version: 2
