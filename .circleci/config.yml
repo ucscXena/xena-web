@@ -55,7 +55,6 @@ jobs:
         - v2-dep-
     # The following line was run implicitly in your 1.0 builds based on what CircleCI inferred about the structure of your project. In 2.0 you need to be explicit about which commands should be run. In some cases you can discard inferred commands if they are not relevant to your project.
     - run: if [ -z "${NODE_ENV:-}" ]; then export NODE_ENV=test; fi
-    - run: export PATH="~/ucscXena/xena-web/node_modules/.bin:$PATH"
     - run: sudo npm install npm@6.5.0 -g
     - run: npm install
     - run: npm run build
@@ -101,7 +100,7 @@ jobs:
     - run: sudo apt-get install python-pip
     - run: sudo apt-get install python-dev
     - run: pip install awscli --upgrade --user
-    - run: export PATH="~/.local/bin:$PATH"
+    - run: echo 'export PATH=".local/bin:$PATH"' >> $BASH_ENV
     - checkout
     - attach_workspace:
         at: ~/ucscXena/xena-web
@@ -116,7 +115,7 @@ jobs:
     - run: sudo apt-get install python-pip
     - run: sudo apt-get install python-dev
     - run: pip install awscli --upgrade --user
-    - run: export PATH="~/.local/bin:$PATH"
+    - run: echo 'export PATH=".local/bin:$PATH"' >> $BASH_ENV
     - checkout
     - attach_workspace:
         at: ~/ucscXena/xena-web
