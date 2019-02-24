@@ -95,7 +95,7 @@ jobs:
     working_directory: ~/ucscXena/xena-web
     docker:
     - image: circleci/node:10-jessie
-    shell: /bin/bash --login
+    shell: /bin/bash
     steps:
     - run: sudo apt-get install python-pip
     - run: sudo apt-get install python-dev
@@ -110,7 +110,7 @@ jobs:
     working_directory: ~/ucscXena/xena-web
     docker:
     - image: circleci/node:10-jessie
-    shell: /bin/bash --login
+    shell: /bin/bash
     steps:
     - run: sudo apt-get install python-pip
     - run: sudo apt-get install python-dev
