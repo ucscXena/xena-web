@@ -14,7 +14,7 @@ jobs:
   build:
     working_directory: ~/ucscXena/xena-web
     parallelism: 1
-    shell: /bin/bash
+    shell: /bin/bash --login
     # CircleCI 2.0 does not support environment variables that refer to each other the same way as 1.0 did.
     # If any of these refer to each other, rewrite them so that they don't or see https://circleci.com/docs/2.0/env-vars/#interpolating-environment-variables-to-set-other-environment-variables .
     environment:
@@ -95,32 +95,30 @@ jobs:
     working_directory: ~/ucscXena/xena-web
     docker:
     - image: circleci/node:10-jessie
-    shell: /bin/bash
+    shell: /bin/bash --login
     steps:
     - run: sudo apt-get install python-pip
     - run: sudo apt-get install python-dev
     - run: pip install awscli --upgrade --user
-    - run: echo 'export PATH=".local/bin:$PATH"' >> $BASH_ENV
     - checkout
     - attach_workspace:
         at: ~/ucscXena/xena-web
-    - run: aws s3 sync --acl public-read public/ ${STAGING_BUCKET} --delete
-    - run: aws cloudfront create-invalidation --distribution-id ${STAGING_DIST} --paths "/*"
+    - run: .local/bin/aws s3 sync --acl public-read public/ ${STAGING_BUCKET} --delete
+    - run: .local/bin/aws cloudfront create-invalidation --distribution-id ${STAGING_DIST} --paths "/*"
   deploy-master:
     working_directory: ~/ucscXena/xena-web
     docker:
     - image: circleci/node:10-jessie
-    shell: /bin/bash
+    shell: /bin/bash --login
     steps:
     - run: sudo apt-get install python-pip
     - run: sudo apt-get install python-dev
     - run: pip install awscli --upgrade --user
-    - run: echo 'export PATH=".local/bin:$PATH"' >> $BASH_ENV
     - checkout
     - attach_workspace:
         at: ~/ucscXena/xena-web
-    - run: aws s3 sync --acl public-read public/ ${MASTER_BUCKET} --delete
-    - run: aws cloudfront create-invalidation --distribution-id ${MASTER_DIST} --paths "/*"
+    - run: .local/bin/aws s3 sync --acl public-read public/ ${MASTER_BUCKET} --delete
+    - run: .local/bin/aws cloudfront create-invalidation --distribution-id ${MASTER_DIST} --paths "/*"
 workflows:
     version: 2
     build-n-deploy:
