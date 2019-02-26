@@ -8,64 +8,46 @@
 
 .bgGreen {
     background-color: var(--primary);
+    color: var(--white);
 }
 
 .bgAccentGreen {
     background-color: var(--accentgreen);
+    color: var(--white);
 }
 
 .bgPaleGreen {
     background-color: var(--palegreen);
+    color: var(--primary);
 }
 
 .bgPeach {
     background-color: var(--accentpeach);
-}
-
-.bgPeach h2, .bgPeach h3, .bgPeach h5, .bgPeach p, .bgPeach a, .bgGreen a, .bgAccentGreen h5, .bgAccentGreen h6 {
     color: var(--white);
 }
 
 .wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-.wrapper.flex {
-    display: flex;
-}
-
-.row {
-    padding: 0 16px;
-    margin: 0 auto;
-    max-width: 1168px;
-}
-
-.rowFlexCol {
-    display: flex;
-    flex-direction: column;
-}
-
-.wrapperContent {
-    width: 100%;
-}
-
-.contentCol4, .contentCol7 {
-    width: 100%;
+    padding: 0;
 }
 
 .section {
-    padding: 72px 0;
+    padding: 72px 16px;
 }
 
-.section.large {
-    padding: 126px 0;
+.section.small {
+    padding: 40px 16px;
+}
+
+.section.publicPrivate {
+    padding: 0;
 }
 
 .section.separator {
     border-top: 4px solid var(--xenagray);
+}
+
+.contentCol4, .contentCol7 {
+    width: 100%;
 }
 
 .xenaButton {
@@ -73,14 +55,14 @@
     align-items: center;
     border-radius: 4px;
     display: flex;
-    justify-content: center;
     height: 48px;
-    width: 214px;
+    justify-content: center;
     padding: 0 16px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    width: 214px;
 }
 
 .xenaButton.small {
@@ -125,14 +107,35 @@
  */
 @media screen and (min-width: 992px) {
 
-    .wrapperContent {
-        margin-left: calc(100% / 12);
-        padding: 0 16px;
+    .wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .bgPeach .section, .section.fixed {
+        padding: 72px 16px;
+    }
+
+    .section {
+        margin: 0 calc(100% / 12);
+        max-width: 1168px;
+        padding: 126px 16px;
+    }
+
+    .section.publicPrivate {
+        padding: 116px 16px 142px;
     }
 
     .contentCol4 {
         max-width: 460px;
         width: calc(100% / 12 * 4);
+    }
+
+    .contentCol4.heroContent {
+        max-width: 380px;
+        width: calc(100% / 12 * 5);
     }
 
     .contentCol7 {
@@ -161,6 +164,18 @@
 }
 
 /**
+ * Medium Window +
+ * https://material.io/design/layout/responsive-layout-grid.html#breakpoints
+ */
+@media screen and (min-width: 1280px) {
+
+    .contentCol4.heroContent {
+        max-width: 460px;
+        width: calc(100% / 12 * 4);
+    }
+}
+
+/**
  * Large Window +
  * https://material.io/design/layout/responsive-layout-grid.html#breakpoints
  */
@@ -168,9 +183,5 @@
 
     .wrapper {
         width: 1440px;
-    }
-
-    .wrapperContent {
-        margin-left: 120px;
     }
 }

@@ -32,7 +32,7 @@ class Footer extends React.Component {
                         </div>
                     </div>
                     <div className={compStyles.disclaimer}>
-                        <span className={fontStyles.mdCaption}>Copyright © 2017, The Regents of the University of California, Santa Cruz.</span>
+                        <span className={fontStyles.mdCaption}>Copyright © 2019, The Regents of the University of California, Santa Cruz.</span>
                         <span className={fontStyles.mdCaption}>All Rights Reserved. Apache-2.0 licence.</span>
                     </div>
                 </div>

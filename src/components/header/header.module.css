@@ -109,6 +109,7 @@
 
 /* Navigation link */
 .navBar.open .navLinks a {
+    color: var(--white);
     font-weight: 300; /* overrides mdHeadline5 */
     padding: 4px 0;
 }
@@ -151,6 +152,7 @@
     /* Links */
     .navBar .navLinks a {
         align-content: center;
+        color: var(--primary);
         padding: 24px 0;
     }
 

@@ -1,0 +1,65 @@
+/*
+ * UCSC Xena Web
+ * https://xena.ucsc.edu/
+ *
+ * Style definitions specific to the UCSC Xena Web whats new component.
+ */
+@import '../../styles/vars.module.css';
+
+/* Whats new */
+.whatsNew h6 {
+    cursor: pointer;
+    margin: 0;
+}
+
+/* Links */
+.whatsNew a, .whatsNew > div > div {
+    color: rgba(26, 83, 92, 0.57);
+}
+
+/* Whats new twitter heading */
+.whatsNew h6 a {
+    align-items: center;
+    display: flex;
+}
+
+/* Dot */
+.whatsNew h6 span:first-of-type:after {
+    content: "\b7";
+    margin: 0 4px;
+}
+
+/* Twitter logo */
+.whatsNew h6 img {
+    height: 18px;
+    margin-left: 8px;
+}
+
+.whatsNew > div {
+    position: relative;  /* Positions twitter image */
+}
+
+/* Twitter content */
+.whatsNew > div p {
+    margin-bottom: 8px;
+}
+
+/* Twitter content image */
+.whatsNew .twitterImg {
+    display: none;
+}
+
+/**
+ * Xena specific breakpoint
+ */
+@media screen and (min-width: 992px) {
+
+    /* Twitter content image */
+    .whatsNew .twitterImg {
+        display: block;
+        left: calc(100% + 48px);
+        position: absolute;
+        top: 0;
+        width: 152px;
+    }
+}

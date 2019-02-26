@@ -17,7 +17,7 @@ const typography = new Typography({
     bodyColor: '#1a535c',
     bodyFontFamily: ['Roboto', 'sans-serif'],
     bodyWeight: '400',
-    headerColor: '#1a535c',
+    headerColor: 'inherit',
     headerFontFamily: ['Roboto', 'sans-serif'],
     headerWeight: '500',
     googleFonts: [
