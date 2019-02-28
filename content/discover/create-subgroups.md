@@ -2,7 +2,7 @@
 path: "/discover/create-subgroups"
 date: "2019-02-21"
 title: "Create subgroups based on mutation status or any other genomic data"
-hrefLink: "https://xena.ucsc.edu/"
+hrefLink: "../create-subgroups"
 image: "./images/genome.png"
 ---
 

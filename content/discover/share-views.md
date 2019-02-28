@@ -2,7 +2,7 @@
 path: "/discover/share-views"
 date: "2019-02-21"
 title: "Share live views with your colleague"
-hrefLink: "https://xena.ucsc.edu/"
+hrefLink: "../share-views"
 image: "./images/barGraph.png"
 ---
 

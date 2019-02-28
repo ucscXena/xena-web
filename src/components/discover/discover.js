@@ -43,8 +43,7 @@ class Discover extends React.Component {
 								</div> : null}
 						</div>
 						<a href={link.childMarkdownRemark.frontmatter.hrefLink ? link.childMarkdownRemark.frontmatter.hrefLink : null}
-						   alt='Discover' target='_blank'
-						   rel='noopener noreferrer'
+						   alt='Discover'
 						   className={classNames(compStyles.learnMoreDetails, {[compStyles.isLink]: link.childMarkdownRemark.frontmatter.hrefLink}, globalStyles.contentCol7)}>
 							<h5 className={fontStyles.sectionTitle}>{link.childMarkdownRemark.frontmatter.title}</h5>
 							<div className={fontStyles.mdBody1}

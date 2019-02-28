@@ -2,7 +2,7 @@
 path: "/discover/download-data"
 date: "2019-02-21"
 title: "Download easy-to-use pre-compiled data for further bioinformatic analysis"
-hrefLink: "https://xena.ucsc.edu/"
+hrefLink: "../download-data"
 image: "./images/exon.png"
 ---
 

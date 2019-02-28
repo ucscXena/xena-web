@@ -2,7 +2,7 @@
 path: "/discover/relationships-among-genomic-clinical"
 date: "2019-02-21"
 title: "Discover relationships among genomic and clinical data"
-hrefLink: "https://xena.ucsc.edu/"
+hrefLink: "../discover-relationships"
 image: "./images/spreadsheet.png"
 ---
 

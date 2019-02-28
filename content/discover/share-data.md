@@ -2,7 +2,7 @@
 path: "/discover/share-data"
 date: "2019-02-21"
 title: "Make your data available to the world"
-hrefLink: "https://xena.ucsc.edu/"
+hrefLink: "../share-data"
 image: "./images/protein.png"
 ---
 

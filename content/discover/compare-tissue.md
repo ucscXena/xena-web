@@ -2,7 +2,7 @@
 path: "/discover/compare-tissue"
 date: "2019-02-21"
 title: "Compare tumor vs normal within or across tissue types"
-hrefLink: "https://xena.ucsc.edu/n-of-1/"
+hrefLink: "../compare-tissue"
 image: "./images/nOf1.png"
 ---
 
