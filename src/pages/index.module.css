@@ -7,147 +7,152 @@
 
 /* Jumbotron */
 .jumbotron {
-    padding-bottom: 30px;
-    padding-top: 16px;
-    position: relative; /* Positions public/private image */
-    text-align: center;
+	padding-bottom: 30px;
+	padding-top: 16px;
+	position: relative; /* Positions public/private image */
+	text-align: center;
 }
 
 /* Jumbotron image */
 .jumbotron img {
-    margin-top: 30px;
-    padding: 0 16px;
-    width: 100%;
+	margin-top: 30px;
+	padding: 0 16px;
+	width: 100%;
 }
 
 /* Overview */
 .overview {
-    padding: 0 16px 56px;
+	padding: 0 16px 56px;
+}
+
+/* Overview paragraph */
+.overview p {
+	margin: 0 0 24px;
 }
 
 /* Public/Private */
 .publicPrivate {
-    overflow: hidden;
-    position: relative; /* Positions green background */
+	overflow: hidden;
+	position: relative; /* Positions green background */
 }
 
 /* Public/Private content */
 .public, .private {
-    padding: 72px 16px;
+	padding: 72px 16px;
 }
 
 /* Public */
 .public {
-    background-color: var(--accentgreen);
+	background-color: var(--accentgreen);
 }
 
 /* Private */
 .private {
-    background-color: var(--primary);
+	background-color: var(--primary);
 }
 
 .public h6, .private h6 {
-    margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 /* Socials, partners, subscribe, subscribe form */
 .socials, .partners, .subscribe, .subscribe > form {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 /* Subscribe */
 .subscribe h6, .subscribe form {
-    margin: 0;
+	margin: 0;
 }
 
 /* Subscribe heading */
 .subscribe h6 span {
-    display: block;
-    font: inherit;
+	display: block;
+	font: inherit;
 }
 
 /* Socials, subscribe form */
 .socials, .subscribe > form {
-    align-items: flex-start;
+	align-items: flex-start;
 }
 
 /* Socials, partners */
 .socials > a, .partners a {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 /* Subscribe form */
 .subscribe > form {
-    margin-top: 40px;
+	margin-top: 40px;
 }
 
 /* Subscribe input */
 .subscribe input {
-    border: solid 4px var(--xenagray);
-    border-radius: 4px;
-    color: #1a535c;
-    display: block;
-    font-size: 1rem;
-    font-weight: 700;
-    margin: 0 0 24px 0;
-    max-width: 450px;
-    padding: 10px;
-    text-indent: 0;
-    width: 100%;
+	border: solid 4px var(--xenagray);
+	border-radius: 4px;
+	color: #1a535c;
+	display: block;
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 0 0 24px 0;
+	max-width: 450px;
+	padding: 10px;
+	text-indent: 0;
+	width: 100%;
 }
 
 .subscribe input:focus {
-    outline: none;
+	outline: none;
 }
 
 .socials > a {
-    align-items: center;
-    cursor: pointer;
-    flex: calc(100% / 3);
-    padding: 16px 0;
+	align-items: center;
+	cursor: pointer;
+	flex: calc(100% / 3);
+	padding: 16px 0;
+	text-decoration: none;
 }
 
-.socials img, .socials i {
-    color: var(--accentgreen);
+.socials svg, .socials i {
+	color: var(--accentgreen);
 }
 
-.socials img {
-    height: auto;
-    width: 18px;
+.socials svg {
+	font-size: 18px;
 }
 
 .socials > a div {
-    margin-left: 16px;
+	margin-left: 16px;
 }
 
 /* Partners */
 .partners {
-    align-items: center;
+	align-items: center;
 }
 
 .partners a {
-    padding-bottom: 40px;
+	padding-bottom: 40px;
 }
 
 .partners div:last-of-type a {
-    padding: 0;
+	padding: 0;
 }
 
 /* NCI group images */
 .partners div:first-of-type img {
-    height: 30px;
+	height: 30px;
 }
 
 /* Other partners images - middle row */
 .partners div:nth-of-type(2) img {
-    height: 50px;
+	height: 50px;
 }
 
 /* UCSC image */
 .partners div:last-of-type img {
-    height: 40px;
+	height: 40px;
 }
 
 /**
@@ -156,15 +161,15 @@
  */
 @media screen and (min-width: 720px) {
 
-    /* Subscribe */
-    .subscribe > form {
-        align-items: center;
-        flex-direction: row;
-    }
+	/* Subscribe */
+	.subscribe > form {
+		align-items: center;
+		flex-direction: row;
+	}
 
-    .subscribe input {
-        margin: 0 16px 0 0;
-    }
+	.subscribe input {
+		margin: 0 16px 0 0;
+	}
 }
 
 /**
@@ -172,108 +177,108 @@
  */
 @media screen and (min-width: 992px) {
 
-    .jumbotron {
-        padding-bottom: 32px;
-        padding-top: 32px;
-        text-align: left;
-    }
+	.jumbotron {
+		padding-bottom: 32px;
+		padding-top: 32px;
+		text-align: left;
+	}
 
-    .jumbotron img {
-        margin-top: 0;
-        max-width: 665px;
-        padding: 0;
-        position: absolute;
-        right: 16px;
-        top: calc(100% + 28px);
-        width: 50%;
-    }
+	.jumbotron img {
+		margin-top: 0;
+		max-width: 665px;
+		padding: 0;
+		position: absolute;
+		right: 16px;
+		top: 100%;
+		width: 50%;
+	}
 
-    /* Public/Private */
-    .publicPrivate > div > div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+	/* Public/Private */
+	.publicPrivate > div > div {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
-    /* Private background */
-    .publicPrivate::after {
-        background-color: var(--primary);
-        content: "";
-        display: block;
-        height: 100%;
-        position: absolute;
-        right: 0;
-        top: 0;
-        transform: skew(-20deg, 0deg);
-        transform-origin: bottom left;
-        width: 60%;
-    }
+	/* Private background */
+	.publicPrivate::after {
+		background-color: var(--primary);
+		content: "";
+		display: block;
+		height: 100%;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform: skew(-20deg, 0deg);
+		transform-origin: bottom left;
+		width: 60%;
+	}
 
-    /* Public/Private content */
-    .public, .private {
-        background-color: unset;
-        padding: 0;
-    }
+	/* Public/Private content */
+	.public, .private {
+		background-color: unset;
+		padding: 0;
+	}
 
-    /* Private */
-    .private {
-        z-index: 1;
-    }
+	/* Private */
+	.private {
+		z-index: 1;
+	}
 
-    /* Subscribe */
-    .subscribe h6, .subscribe > form {
-        align-self: center;
-        width: 50%;
-    }
+	/* Subscribe */
+	.subscribe h6, .subscribe > form {
+		align-self: center;
+		width: 50%;
+	}
 
-    /* Socials */
-    .socials {
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+	/* Socials */
+	.socials {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
-    .partners {
-        align-items: unset;
-    }
+	.partners {
+		align-items: unset;
+	}
 
-    .partners div {
-        align-items: center;
-        display: flex;
-    }
+	.partners div {
+		align-items: center;
+		display: flex;
+	}
 
-    .partners div:not(:first-of-type) {
-        padding-top: 60px;
-    }
+	.partners div:not(:first-of-type) {
+		padding-top: 60px;
+	}
 
-    .partners a {
-        flex: 1;
-        padding: 0;
-    }
+	.partners a {
+		flex: 1;
+		padding: 0;
+	}
 
-    /* NCI group images */
-    .partners div:first-of-type img {
-        height: 30px;
-    }
+	/* NCI group images */
+	.partners div:first-of-type img {
+		height: 30px;
+	}
 
-    /* Other partners - middle row images */
-    .partners div:nth-of-type(2) img {
-        height: 50px;
-    }
+	/* Other partners - middle row images */
+	.partners div:nth-of-type(2) img {
+		height: 50px;
+	}
 
-    /* UCSC image */
-    .partners div:last-of-type img {
-        height: 40px;
-    }
+	/* UCSC image */
+	.partners div:last-of-type img {
+		height: 40px;
+	}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1439px) {
 
-    .publicPrivate::after {
-        transform: skew(-10deg, 0);
-        width: 57%;
-    }
+	.publicPrivate::after {
+		transform: skew(-10deg, 0);
+		width: 57%;
+	}
 }
 
 /**
@@ -282,8 +287,8 @@
  */
 @media screen and (min-width: 1280px) {
 
-    .jumbotron img {
-        right: 128px;
-        width: 50%;
-    }
+	.jumbotron img {
+		right: 128px;
+		width: 50%;
+	}
 }

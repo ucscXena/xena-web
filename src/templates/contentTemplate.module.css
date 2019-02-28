@@ -1,0 +1,71 @@
+/*
+ * UCSC Xena Web
+ * https://xena.ucsc.edu/
+ *
+ * Style definitions specific to the UCSC Xena Web template component.
+ */
+
+.markdownContent {
+	display: flex;
+	justify-content: center;
+	margin: 32px 0 72px;
+	padding: 0 16px;
+}
+
+/* Page post */
+.pagePost {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 32px;
+}
+
+.pagePost div, .editContent {
+	padding: 8px 0;
+}
+
+/* Author */
+.pagePost div:first-of-type {
+	border-bottom: 1px solid var(--black6);
+}
+
+/* Dot */
+.pagePost div:first-of-type span:first-of-type:after {
+	content: "\b7";
+	margin: 0 4px;
+}
+
+/* Socials */
+.pagePost a:last-of-type {
+	margin-left: 12px;
+}
+
+/* Link wrapper around font awesome icon */
+.pagePost a {
+	display: inline-block;
+	line-height: 1;
+}
+
+/* Font Awesome icon */
+.pagePost svg {
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.editContent {
+	composes: mdCaption from '../styles/xenaFonts.module.css';
+	border-top: 1px solid var(--black6);
+	display: inline-flex;
+	margin-top: 24px;
+	text-decoration: none;
+}
+
+/**
+ * Xena specific breakpoint
+ */
+@media screen and (min-width: 992px) {
+
+	.markdownContent {
+		padding: 0;
+	}
+}

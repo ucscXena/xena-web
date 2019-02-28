@@ -2,7 +2,7 @@
  * UCSC Xena Web
  * https://xena.ucsc.edu/
  *
- * UCSC Xena Web content template component.
+ * UCSC Xena Web home page.
  */
 
 // Core dependencies
@@ -13,11 +13,13 @@ import {graphql} from 'gatsby';
 import Discover from '../components/discover/discover';
 import Layout from '../components/layout';
 import WhatsNew from '../components/whatsNew/whatsNew';
+import {Link} from 'gatsby';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faTwitter} from '@fortawesome/free-brands-svg-icons';
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 // Images
 import xenaHero from '../../images/jumbotron/xena-public-private@3x.png';
-import xenaTwitter from '../../images/socials/xenaTwitter.png';
-import xenaMail from '../../images/socials/xenaMail.png';
 import biojs from '../../images/partners/logo-biojs.png';
 import globalAlliance from '../../images/partners/logo-global-alliance.png';
 import nci from '../../images/partners/logo-nci.png';
@@ -57,8 +59,8 @@ export default ({data}) => {
 					<img src={xenaHero} alt='UCSC Xena'/>
 				</div>
 			</div>
-			<div className={globalStyles.wrapper}>
-				<div className={classNames(compStyles.overview, globalStyles.section)}>
+			<div id='overview' className={globalStyles.wrapper}>
+				<div className={classNames(compStyles.overview, globalStyles.section, globalStyles.bgWhite)}>
 					<div className={classNames(globalStyles.contentCol4, globalStyles.heroContent)}>
 						<p className={fontStyles.mdBody1}>An online exploration tool for public and private multi-omics
 							functional genomics and
@@ -68,12 +70,13 @@ export default ({data}) => {
 					</div>
 				</div>
 			</div>
-			<div className={globalStyles.bgPeach}>
+			<div id='tutorials' className={globalStyles.bgPeach}>
 				<div className={globalStyles.wrapper}>
 					<div className={classNames(globalStyles.section)}>
 						<div className={classNames(globalStyles.contentCol4, globalStyles.heroContent)}>
-							<h5>Tutorials and walkthroughs</h5>
-							<p className={classNames(fontStyles.mdBody1, fontStyles.medium)}>Don't know where to start?
+							<h5 className={fontStyles.sectionTitle}>Tutorials and walkthroughs</h5>
+							<p className={classNames(fontStyles.mdBody1, fontStyles.sectionText)}>Don't know where to
+								start?
 								Jump in with one of our
 								tutorials or "How do I …" walkthroughs</p>
 							<a className={classNames(globalStyles.xenaButton, globalStyles.white)} alt='Tutorials'
@@ -87,30 +90,33 @@ export default ({data}) => {
 					<div className={classNames(globalStyles.section, globalStyles.publicPrivate)}>
 						<div
 							className={classNames(globalStyles.contentCol4, compStyles.public)}>
-							<h5>Explore TCGA, GDC, and other public cancer genomics resources</h5>
-							<h6>Discover new trends and validate your findings with 1500+ datasets and 50+ cancer
+							<h5 className={fontStyles.sectionTitle}>Explore TCGA, GDC, and other public cancer genomics
+								resources</h5>
+							<h6 className={fontStyles.sectionSubtitle}>Discover new trends and validate your findings
+								with 1500+ datasets and 50+ cancer
 								types.</h6>
-							<a className={classNames(globalStyles.xenaButton, globalStyles.peach)} alt='Public Data'
-							   href='https://xena.ucsc.edu/public-hubs/' target='_blank' rel='noopener noreferrer'>Learn
-								More</a>
+							<Link className={classNames(globalStyles.xenaButton, globalStyles.peach)} to="/public">Learn
+								More</Link>
 						</div>
 						<div
 							className={classNames(globalStyles.contentCol4, compStyles.private)}>
-							<h5>View your own private data, or data you are interested in from a paper</h5>
-							<h6>View your data, securely and privately. Our step-by-step wizard will guide you
+							<h5 className={fontStyles.sectionTitle}>View your own private data, or data you are
+								interested in from a paper</h5>
+							<h6 className={fontStyles.sectionSubtitle}>View your data, securely and privately. Our
+								step-by-step wizard will guide you
 								whether you're on a Windows or Mac.</h6>
-							<a className={classNames(globalStyles.xenaButton, globalStyles.peach)} alt='Public Data'
-							   href='https://xena.ucsc.edu/private-hubs/' target='_blank' rel='noopener noreferrer'>Learn
-								More</a>
+							<Link className={classNames(globalStyles.xenaButton, globalStyles.peach)} to='/private'>Learn
+								More</Link>
 						</div>
 					</div>
 				</div>
 			</div>
 			{discover ? <Discover data={discover}/> : null}
 			{twitter ? <WhatsNew data={twitter}/> : null}
-			<div className={globalStyles.wrapper}>
-				<div className={classNames(globalStyles.section, globalStyles.separator, compStyles.subscribe)}>
-					<h6 className={fontStyles.light}>
+			<div id='subscribe' className={globalStyles.wrapper}>
+				<div
+					className={classNames(globalStyles.section, globalStyles.bgWhite, globalStyles.separator, compStyles.subscribe)}>
+					<h6 className={classNames(fontStyles.sectionSubtitle, fontStyles.light)}>
 						<span>We’re constantly improving UCSC Xena.</span><span>Subscribe to our newsletter and stay up to date.</span>
 					</h6>
 					<form>
@@ -124,11 +130,11 @@ export default ({data}) => {
 				<div
 					className={classNames(globalStyles.section, globalStyles.small, globalStyles.separator, compStyles.socials)}>
 					<a href='https://twitter.com/ucscxena' target='_blank' rel='noopener noreferrer'>
-						<img src={xenaTwitter} alt='UCSC Twitter'/>
+						<FontAwesomeIcon icon={faTwitter}/>
 						<div className={fontStyles.xenaSocials}>@UCSCXena</div>
 					</a>
 					<a href='mailto:genome-cancer@soe.ucsc.edu' target='_blank' rel='noopener noreferrer'>
-						<img src={xenaMail} alt='UCSC Mail'/>
+						<FontAwesomeIcon icon={faEnvelope}/>
 						<div className={fontStyles.xenaSocials}>genome-cancer@soe.ucsc.edu</div>
 					</a>
 					<a href='https://groups.google.com/forum/#!forum/ucsc-cancer-genomics-browser' target='_blank'
@@ -181,6 +187,7 @@ export const query = graphql`
         html
         frontmatter {
           title
+          author
           path
           date
           component
@@ -198,6 +205,7 @@ export const query = graphql`
               html
               frontmatter {
                 title
+                author
                 path
                 date
                 hrefLink

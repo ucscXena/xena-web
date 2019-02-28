@@ -15,30 +15,30 @@ import fontStyles from '../../styles/xenaFonts.module.css';
 
 class Footer extends React.Component {
 
-    render() {
-        return (
-            <div className={globalStyles.bgPaleGreen}>
-                <div className={globalStyles.wrapper}>
-                    <div className={compStyles.footerLinks}>
-                        <div className={fontStyles.mdBody2}>
-                            <a href='/'>UCSC</a>
-                            <a href='/'>UCSC Genomics Institute</a>
-                            <a href='/'>UCSC Computational Genomics Laboratory</a>
-                        </div>
-                        <div className={fontStyles.mdBody2}>
-                            <a href='https://twitter.com/ucscxena'>Twitter</a>
-                            <a href='mailto:genome-cancer@soe.ucsc.edu'>Email</a>
-                            <a href='https://github.com/ucscXena'>GitHub</a>
-                        </div>
-                    </div>
-                    <div className={compStyles.disclaimer}>
-                        <span className={fontStyles.mdCaption}>Copyright © 2019, The Regents of the University of California, Santa Cruz.</span>
-                        <span className={fontStyles.mdCaption}>All Rights Reserved. Apache-2.0 licence.</span>
-                    </div>
-                </div>
-            </div>
-        );
-    }
+	render() {
+		return (
+			<div className={globalStyles.bgPaleGreen}>
+				<div className={globalStyles.wrapper}>
+					<div className={compStyles.footerLinks}>
+						<div className={fontStyles.mdBody2}>
+							<a href='/'>UCSC</a>
+							<a href='/'>UCSC Genomics Institute</a>
+							<a href='/'>UCSC Computational Genomics Laboratory</a>
+						</div>
+						<div className={fontStyles.mdBody2}>
+							<a href='https://twitter.com/ucscxena'>Twitter</a>
+							<a href='mailto:genome-cancer@soe.ucsc.edu'>Email</a>
+							<a href='https://github.com/ucscXena'>GitHub</a>
+						</div>
+					</div>
+					<div className={compStyles.disclaimer}>
+						<span className={fontStyles.mdCaption}>Copyright © 2019, The Regents of the University of California, Santa Cruz.</span>
+						<span className={fontStyles.mdCaption}>All Rights Reserved. Apache-2.0 licence.</span>
+					</div>
+				</div>
+			</div>
+		);
+	}
 }
 
 export default Footer;

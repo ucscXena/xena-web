@@ -6,7 +6,10 @@
  */
 
 // Core dependencies
+import { Link } from 'gatsby';
 import React from 'react';
+
+// App dependencies
 
 // Images
 import headerLogo from '../../../images/logo/logo-ucsc@3x.png';
@@ -20,48 +23,48 @@ let classNames = require('classnames');
 
 class Header extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {toggleNavBarMenu: false};
-        this.toggleMenu = this.toggleMenu.bind(this);
-    }
+	constructor(props) {
+		super(props);
+		this.state = {menuOpen: false};
+		this.toggleMenu = this.toggleMenu.bind(this);
+	}
 
-    toggleMenu = () => {
-        this.setState({toggleNavBarMenu: !this.state.toggleNavBarMenu});
-        /*this.props.onMenuOpen(this.state.toggleNavBarMenu);*/
-    };
+	toggleMenu = () => {
+		this.setState({menuOpen: !this.state.menuOpen});
+		this.props.onMenuOpen(this.state.menuOpen);
+	};
 
-    render() {
+	render() {
 
-        const getFontClass = () => {
+		const getFontClass = () => {
 
-            return classNames({
-                [compStyles.navLinks]: true,
-                [fontStyles.mdBody2]: !this.state.toggleNavBarMenu,
-                [fontStyles.mdHeadline5]: this.state.toggleNavBarMenu,
-                [globalStyles.bgGreen]: this.state.toggleNavBarMenu
-            });
-        };
+			return classNames({
+				[compStyles.navLinks]: true,
+				[fontStyles.mdBody2]: !this.state.menuOpen,
+				[fontStyles.mdHeadline5]: this.state.menuOpen,
+				[globalStyles.bgGreen]: this.state.menuOpen
+			});
+		};
 
-        return (
-            <div>
-                <div className={globalStyles.wrapper}>
-                    <div className={classNames(compStyles.navBar, {[compStyles.open]: this.state.toggleNavBarMenu})}>
-                        <img src={headerLogo} alt='UCSC Xena'/>
-                        <div className={compStyles.navBarMenu} onClick={this.toggleMenu}><span/></div>
-                        <div className={getFontClass()}>
-                            <a href='/'>Overview</a>
-                            <a href='/'>Analysis</a>
-                            <a href='/'>Tutorials</a>
-                            <a href='/'>What's New</a>
-                            <a href='/'>Cite Us</a>
-                            <a href='/'>Subscribe</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
-    }
+		return (
+			<div>
+				<div className={globalStyles.wrapper}>
+					<div className={classNames(compStyles.navBar, {[compStyles.open]: this.state.menuOpen})}>
+						<Link to='/'><img src={headerLogo} alt='UCSC Xena'/></Link>
+						{this.props.markdownPages ? null : <div className={compStyles.navBarMenu} onClick={this.toggleMenu}><span/></div>}
+						{this.props.markdownPages ? null : <div className={getFontClass()}>
+							<Link to='/#overview' onClick={this.state.menuOpen? this.toggleMenu : null}>Overview</Link>
+							<Link to='/#analysis' onClick={this.state.menuOpen? this.toggleMenu : null}>Analysis</Link>
+							<Link to='/#tutorials' onClick={this.state.menuOpen? this.toggleMenu : null}>Tutorials</Link>
+							<Link to='/#whatsnew' onClick={this.state.menuOpen? this.toggleMenu : null}>What's New</Link>
+							<a href='/' onClick={this.state.menuOpen? this.toggleMenu : null}>Cite Us</a>
+							<Link to='/#subscribe' onClick={this.state.menuOpen? this.toggleMenu : null}>Subscribe</Link>
+						</div>}
+					</div>
+				</div>
+			</div>
+		);
+	}
 }
 
 export default Header;

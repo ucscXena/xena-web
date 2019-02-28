@@ -1,0 +1,13 @@
+/*
+ * UCSC Xena Web
+ * https://xena.ucsc.edu/
+ *
+ * Style definitions specific to the UCSC Xena Web error page.
+ */
+
+.errorPage {
+	display: flex;
+	justify-content: flex-start;
+	margin: 32px 0 72px;
+	padding: 0 16px;
+}

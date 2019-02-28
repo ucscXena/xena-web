@@ -1,7 +1,6 @@
 /**
  * Typography
  */
-
 @import './vars.module.css';
 
 /* Material Design Typography class */
@@ -9,148 +8,175 @@
 
 /* mdHeadline1 */
 .mdHeadline1 {
-    font-family: "Roboto", sans-serif;
-    font-size: 96px;
-    font-weight: 300;
-    letter-spacing: -1.5px;
-    line-height: 112px;
+	font-family: "Roboto", sans-serif;
+	font-size: 96px;
+	font-weight: 300;
+	letter-spacing: -1.5px;
+	line-height: 112px;
 }
 
 /* mdHeadline2 */
 .mdHeadline2 {
-    font-family: "Roboto", sans-serif;
-    font-size: 60px;
-    font-weight: 300;
-    letter-spacing: -0.5px;
-    line-height: 71px; /* TODO confirm */
+	font-family: "Roboto", sans-serif;
+	font-size: 60px;
+	font-weight: 300;
+	letter-spacing: -0.5px;
+	line-height: 71px; /* TODO confirm */
 }
 
 /* mdHeadline3 */
 .mdHeadline3 {
-    font-family: "Roboto", sans-serif;
-    font-size: 48px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 57px;
+	font-family: "Roboto", sans-serif;
+	font-size: 48px;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 57px;
 }
 
 /* mdHeadline4 */
 .mdHeadline4 {
-    font-family: "Roboto", sans-serif;
-    font-size: 34px;
-    font-weight: 400;
-    letter-spacing: 0.25px;
-    line-height: 40px;
+	font-family: "Roboto", sans-serif;
+	font-size: 34px;
+	font-weight: 400;
+	letter-spacing: 0.25px;
+	line-height: 40px;
 }
 
 /* mdHeadline5 */
 .mdHeadline5 {
-    font-family: "Roboto", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 28px;
+	font-family: "Roboto", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 28px;
 }
 
 /* mdHeadline6 */
 .mdHeadline6 {
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0.15px;
-    line-height: 24px;
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 0.15px;
+	line-height: 24px;
 }
+
 /* mdSubtitle1 */
 
 .mdSubtitle1 {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.15px;
-    line-height: 24px;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0.15px;
+	line-height: 24px;
 }
 
 /* mdSubtitle2 */
 .mdSubtitle2 {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.1px;
-    line-height: 24px;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 0.1px;
+	line-height: 24px;
 }
 
 /* mdBody1 */
 .mdBody1 {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    line-height: 28px;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	line-height: 28px;
 }
 
 /* mdBody2 */
 .mdBody2 {
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.25px;
-    line-height: 20px;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.25px;
+	line-height: 20px;
 }
 
 /* mdButton */
 .mdButton {
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1.25px;
-    text-transform: uppercase;
-    line-height: 16px;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1.25px;
+	text-transform: uppercase;
+	line-height: 16px;
 }
 
 /* mdCaption */
 .mdCaption {
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.4px;
-    line-height: 16px;
+	font-family: "Roboto", sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 0.4px;
+	line-height: 16px;
 }
 
 /* Xena Specific */
 /* Hero */
 .hero {
-    color: var(--accentgreen);
-    font-family: "Roboto", sans-serif;
-    font-size: 80px;
-    font-weight: 900;
-    line-height: 80px;
-    margin-bottom: 16px;
+	color: var(--accentgreen);
+	font-family: "Roboto", sans-serif;
+	font-size: 80px;
+	font-weight: 900;
+	line-height: 80px;
+	margin-bottom: 16px;
 }
 
 /* Hero Subtitle */
 .heroSubtitle {
-    composes: mdHeadline4;
-    font-style: italic;
-    font-weight: 500;
+	composes: mdHeadline4;
+	color: var(--primary);
+	font-style: italic;
+	font-weight: 500;
+}
+
+/* Xena homepage h5 */
+.sectionTitle {
+	color: inherit;
+	font-family: "Roboto", sans-serif;
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 40px;
+	margin: 0;
+}
+
+/* Xena homepage h6 */
+.sectionSubtitle {
+	color: inherit;
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 32px;
+	margin: 12px 0 0;
+}
+
+/* Xena homepage p */
+.sectionText {
+	margin: 24px 0;
 }
 
 .xenaSocials {
-    color: rgba(26, 83, 92, 0.57);
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
+	color: rgba(26, 83, 92, 0.57);
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	font-weight: 700;
 }
 
 .light {
-    font-weight: 300;
+	font-weight: 300;
 }
 
 .medium {
-    font-weight: 500;
+	font-weight: 500;
 }
 
 .bold {
-    font-weight: 600;
+	font-weight: 600;
 }
 
 /**
@@ -158,10 +184,10 @@
  */
 @media screen and (max-width: 992px) {
 
-    /* Hero Subtitle */
-    .heroSubtitle {
-        font-size: 20px;
-        letter-spacing: 0.15px;
-        line-height: 24px;
-    }
+	/* Hero Subtitle */
+	.heroSubtitle {
+		font-size: 20px;
+		letter-spacing: 0.15px;
+		line-height: 24px;
+	}
 }

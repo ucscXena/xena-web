@@ -1,14 +1,35 @@
-import React from "react"
+/*
+ * UCSC Xena Web
+ * https://xena.ucsc.edu/
+ *
+ * UCSC Xena Web error page.
+ */
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+// Core dependencies
+import React from 'react';
+
+// App dependencies
+import Layout from '../components/layout';
+import { Link } from 'gatsby';
+
+// Styles
+import compStyles from './404.module.css';
+import globalStyles from '../styles/global.module.css';
+
+let classNames = require('classnames');
 
 const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-)
+	<Layout markdownPages={true}>
+		<div className={classNames(globalStyles.wrapper, globalStyles.wrapperFlex)}>
+			<div className={compStyles.errorPage}>
+				<div className={globalStyles.contentWrapper}>
+				<h1>Page Not Found</h1>
+				<p>We can’t find the page you were looking for.</p>
+					<p>Return to the <Link to='/'>home page</Link>.</p>
+			</div>
+			</div>
+		</div>
+	</Layout>
+);
 
 export default NotFoundPage

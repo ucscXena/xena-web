@@ -9,11 +9,15 @@
 import Img from "gatsby-image"
 import React from 'react';
 
+// App dependencies
+import {faTwitter} from '@fortawesome/free-brands-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+
 // Images
-import xenaTwitter from '../../../images/socials/xenaTwitterPrimary.png';
 
 // Styles
 import compStyles from './whatsNew.module.css';
+import fontStyles from '../../styles/xenaFonts.module.css';
 import globalStyles from '../../styles/global.module.css';
 
 let classNames = require('classnames');
@@ -22,19 +26,21 @@ class WhatsNew extends React.Component {
 
 	render() {
 		return (
-			<div className={globalStyles.wrapper}>
-				<div className={classNames(globalStyles.section, globalStyles.fixed, globalStyles.separator, compStyles.whatsNew)}>
-					<h5>What's New</h5>
-					<h6><a href='https://twitter.com/ucscxena' target='_blank' rel='noopener noreferrer'>
-						<span>@UCSCXena</span><span>{this.props.data.date}</span><img src={xenaTwitter}
-																					  alt='UCSC Twitter'/></a>
+			<div id='whatsnew' className={globalStyles.wrapper}>
+				<div
+					className={classNames(globalStyles.section, globalStyles.bgWhite, globalStyles.fixed, globalStyles.separator, compStyles.whatsNew)}>
+					<h5 className={fontStyles.sectionTitle}>What's New</h5>
+					<h6 className={fontStyles.sectionSubtitle}><a href='https://twitter.com/ucscxena' target='_blank'
+																  rel='noopener noreferrer'>
+						<span>@UCSCXena</span><span>{this.props.data.date}</span><FontAwesomeIcon icon={faTwitter}/></a>
 					</h6>
 					<div className={classNames(globalStyles.contentCol4)}>
-						<p>{this.props.data.title}</p>
-						<a href={this.props.data.hrefLink} target='_blank' rel='noopener noreferrer'>{this.props.data.hrefLink}</a>
+						<p className={classNames(fontStyles.mdBody1, fontStyles.sectionText)}>{this.props.data.title}</p>
+						<a href={this.props.data.hrefLink} target='_blank'
+						   rel='noopener noreferrer'>{this.props.data.hrefLink}</a>
 						<div>{this.props.data.twitterHashtag}</div>
 						<div className={compStyles.twitterImg}><Img fluid={this.props.data.image.childImageSharp.fluid}
-								  alt='Twitter Image'/></div>
+																	alt='Twitter Image'/></div>
 					</div>
 				</div>
 			</div>

@@ -73,10 +73,36 @@ module.exports = {
 		},
 		`gatsby-remark-katex`,
 		`gatsby-remark-prismjs`,
-		`gatsby-transformer-remark`,
+		{
+			resolve: `gatsby-transformer-remark`,
+			options: {
+				plugins: [
+					{
+						resolve: "gatsby-remark-custom-blocks",
+						options: {
+							blocks: {
+								contentHero: {
+									classes: "contentHero",
+								}
+							}
+						}
+					},
+					{
+						resolve: "gatsby-remark-embed-video",
+						options: {
+							width: 550,
+							ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
+							related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
+							noIframeBorder: true //Optional: Disable insertion of <style> border: 0
+						}
+					},
+					`gatsby-remark-responsive-iframe`,
+				]
+			}
+		},
 		`gatsby-transformer-sharp`,
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.app/offline
 		// 'gatsby-plugin-offline',
 	],
-}
+};

@@ -22,9 +22,9 @@ class Discover extends React.Component {
 
 	render() {
 		return (
-			<div className={globalStyles.wrapper}>
-				<div className={globalStyles.section}>
-					<h5>{this.props.data.title}</h5>
+			<div id='analysis' className={globalStyles.wrapper}>
+				<div className={classNames(globalStyles.section, globalStyles.bgWhite)}>
+					<h5 className={fontStyles.sectionTitle}>{this.props.data.title}</h5>
 					{this.props.data.linked.map((link, i) => <div key={i} className={compStyles.discover}>
 						<div className={compStyles.learnMore}>
 							{link.childMarkdownRemark.frontmatter.image ?
@@ -42,10 +42,11 @@ class Discover extends React.Component {
 									</a>
 								</div> : null}
 						</div>
-						<a href={link.childMarkdownRemark.frontmatter.hrefLink ? link.childMarkdownRemark.frontmatter.hrefLink : null} alt='Discover' target='_blank'
+						<a href={link.childMarkdownRemark.frontmatter.hrefLink ? link.childMarkdownRemark.frontmatter.hrefLink : null}
+						   alt='Discover' target='_blank'
 						   rel='noopener noreferrer'
 						   className={classNames(compStyles.learnMoreDetails, {[compStyles.isLink]: link.childMarkdownRemark.frontmatter.hrefLink}, globalStyles.contentCol7)}>
-							<h5>{link.childMarkdownRemark.frontmatter.title}</h5>
+							<h5 className={fontStyles.sectionTitle}>{link.childMarkdownRemark.frontmatter.title}</h5>
 							<div className={fontStyles.mdBody1}
 								 dangerouslySetInnerHTML={{__html: link.childMarkdownRemark.html}}/>
 						</a>

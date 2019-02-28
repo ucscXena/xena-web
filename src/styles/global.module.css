@@ -6,100 +6,115 @@
  */
 @import '../styles/vars.module.css';
 
-.bgGreen {
-    background-color: var(--primary);
-    color: var(--white);
+.bgAccentGreen {
+	background-color: var(--accentgreen);
+	color: var(--white);
 }
 
-.bgAccentGreen {
-    background-color: var(--accentgreen);
-    color: var(--white);
+.bgGreen {
+	background-color: var(--primary);
+	color: var(--white);
 }
 
 .bgPaleGreen {
-    background-color: var(--palegreen);
-    color: var(--primary);
+	background-color: var(--palegreen);
+	color: var(--primary);
 }
 
 .bgPeach {
-    background-color: var(--accentpeach);
-    color: var(--white);
+	background-color: var(--accentpeach);
+	color: var(--white);
+}
+
+.bgWhite {
+	color: var(--primary);
 }
 
 .wrapper {
-    padding: 0;
+	padding: 0;
+}
+
+.wrapperFlex {
+	flex: 1;
 }
 
 .section {
-    padding: 72px 16px;
+	padding: 72px 16px;
 }
 
 .section.small {
-    padding: 40px 16px;
+	padding: 40px 16px;
 }
 
 .section.publicPrivate {
-    padding: 0;
+	padding: 0;
 }
 
 .section.separator {
-    border-top: 4px solid var(--xenagray);
+	border-top: 4px solid var(--xenagray);
+}
+
+/* Content width capped - markdown pages */
+.contentWrapper {
+	max-width: 750px;
 }
 
 .contentCol4, .contentCol7 {
-    width: 100%;
+	width: 100%;
 }
 
 .xenaButton {
-    composes: mdSubtitle2 from './xenaFonts.module.css';
-    align-items: center;
-    border-radius: 4px;
-    display: flex;
-    height: 48px;
-    justify-content: center;
-    padding: 0 16px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    width: 214px;
+	composes: mdSubtitle2 from './xenaFonts.module.css';
+	align-items: center;
+	border-radius: 4px;
+	display: flex;
+	height: 48px;
+	justify-content: center;
+	padding: 0 16px;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	width: 214px;
 }
 
 .xenaButton.small {
-    width: 158px;
+	width: 158px;
 }
 
 .xenaButton.yellow {
-    background-color: var(--accentyellow);
+	background-color: var(--accentyellow);
+	color: var(--primary);
 }
 
 .xenaButton.yellow:hover {
-    background-color: var(--accentpeach);
-    color: var(--white);
+	background-color: var(--accentpeach);
+	color: var(--white);
 }
 
 .xenaButton.white {
-    background-color: var(--white);
-    color: var(--accentpeach);
+	background-color: var(--white);
+	color: var(--accentpeach);
 }
 
 .xenaButton.peach, .xenaButton.learnMore {
-    background-color: var(--accentpeach);
-    color: var(--white);
+	background-color: var(--accentpeach);
+	color: var(--white);
 }
 
 .xenaButton.learnMore:hover {
-    background-color: var(--accentyellow);
-    color: var(--primary);
+	background-color: var(--accentyellow);
+	color: var(--primary);
 }
 
 .xenaButton.peach:hover, .xenaButton.white:hover {
-    background-color: var(--accentyellow);
-    color: var(--primary);
+	background-color: var(--accentyellow);
+	color: var(--primary);
 }
 
 .discoverImg {
-    display: none;
+	display: none;
 }
 
 /**
@@ -107,60 +122,60 @@
  */
 @media screen and (min-width: 992px) {
 
-    .wrapper {
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+	.wrapper {
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
 
-    .bgPeach .section, .section.fixed {
-        padding: 72px 16px;
-    }
+	.bgPeach .section, .section.fixed {
+		padding: 72px 16px;
+	}
 
-    .section {
-        margin: 0 calc(100% / 12);
-        max-width: 1168px;
-        padding: 126px 16px;
-    }
+	.section {
+		margin: 0 calc(100% / 12);
+		max-width: 1168px;
+		padding: 126px 16px;
+	}
 
-    .section.publicPrivate {
-        padding: 116px 16px 142px;
-    }
+	.section.publicPrivate {
+		padding: 116px 16px 142px;
+	}
 
-    .contentCol4 {
-        max-width: 460px;
-        width: calc(100% / 12 * 4);
-    }
+	.contentCol4 {
+		max-width: 460px;
+		width: calc(100% / 12 * 4);
+	}
 
-    .contentCol4.heroContent {
-        max-width: 380px;
-        width: calc(100% / 12 * 5);
-    }
+	.contentCol4.heroContent {
+		max-width: 380px;
+		width: calc(100% / 12 * 5);
+	}
 
-    .contentCol7 {
-        width: calc(100% / 12 * 7);
-    }
+	.contentCol7 {
+		width: calc(100% / 12 * 7);
+	}
 
-    .discoverImg {
-        display: flex;
-    }
+	.discoverImg {
+		display: flex;
+	}
 
-    .roundImage {
-        border-radius: 50%;
-        height: 200px;
-        width: 200px;
-    }
+	.roundImage {
+		border-radius: 50%;
+		height: 200px;
+		width: 200px;
+	}
 
-    .xenaButton.learnMore {
-        background-color: var(--white);
-        color: var(--accentpeach);
-    }
+	.xenaButton.learnMore {
+		background-color: var(--white);
+		color: var(--accentpeach);
+	}
 
-    .xenaButton.learnMore:hover {
-        background-color: var(--white);
-        color: var(--accentpeach);
-    }
+	.xenaButton.learnMore:hover {
+		background-color: var(--white);
+		color: var(--accentpeach);
+	}
 }
 
 /**
@@ -169,10 +184,10 @@
  */
 @media screen and (min-width: 1280px) {
 
-    .contentCol4.heroContent {
-        max-width: 460px;
-        width: calc(100% / 12 * 4);
-    }
+	.contentCol4.heroContent {
+		max-width: 460px;
+		width: calc(100% / 12 * 4);
+	}
 }
 
 /**
@@ -181,7 +196,7 @@
  */
 @media screen and (min-width: 1440px) {
 
-    .wrapper {
-        width: 1440px;
-    }
+	.wrapper {
+		width: 1440px;
+	}
 }
