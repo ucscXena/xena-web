@@ -26,9 +26,11 @@ class Footer extends React.Component {
 							<a href='/'>UCSC Computational Genomics Laboratory</a>
 						</div>
 						<div className={fontStyles.mdBody2}>
-							<a href='https://twitter.com/ucscxena'>Twitter</a>
+							<a href='https://twitter.com/ucscxena' target='_blank' rel='noopener noreferrer'>Twitter</a>
 							<a href='mailto:genome-cancer@soe.ucsc.edu'>Email</a>
-							<a href='https://github.com/ucscXena'>GitHub</a>
+							<a href='https://github.com/ucscXena' target='_blank' rel='noopener noreferrer'>GitHub</a>
+							<a href='https://ucsc-xena.gitbook.io' target='_blank' rel='noopener noreferrer'>User
+								Guide</a>
 						</div>
 					</div>
 					<div className={compStyles.disclaimer}>

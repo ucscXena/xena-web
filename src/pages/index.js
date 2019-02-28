@@ -76,10 +76,11 @@ export default ({data}) => {
 						<div className={classNames(globalStyles.contentCol4, globalStyles.heroContent)}>
 							<h5 className={fontStyles.sectionTitle}>Tutorials and walkthroughs</h5>
 							<p className={classNames(fontStyles.mdBody1, fontStyles.sectionText)}>Don't know where to
-								start?
-								Jump in with one of our
-								tutorials or "How do I …" walkthroughs</p>
-							<Link className={classNames(globalStyles.xenaButton, globalStyles.white)} to='/getting-started'>Tutorials</Link>
+								start? Jump in with one of our tutorials or "How do I …" walkthroughs</p>
+							<a href='https://ucsc-xena.gitbook.io/project/tutorials' alt='Tutorials' target='_blank'
+							   rel='noopener noreferrer'
+							   className={classNames(globalStyles.xenaButton, globalStyles.white)}
+							   to='/getting-started'>Tutorials</a>
 						</div>
 					</div>
 				</div>
@@ -189,6 +190,8 @@ export const query = graphql`
           author
           path
           date
+          hidePagePost
+          hideImprovePage
           component
           twitterHashtag
           hrefLink
