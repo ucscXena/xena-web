@@ -97,6 +97,14 @@ module.exports = {
 						}
 					},
 					`gatsby-remark-responsive-iframe`,
+					{
+						resolve: `gatsby-remark-images`,
+						options: {
+							maxWidth: 550,
+							linkImagesToOriginal: false,
+							wrapperStyle: `margin: 0 !important;`,
+						}
+					},
 				]
 			}
 		},
