@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c89d1531-7c52-4091-be76-f448bf5b5e41" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/public.md" afterPath="$PROJECT_DIR$/content/public.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gatsby-config.js" afterPath="$PROJECT_DIR$/gatsby-config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/discover/discover.js" afterPath="$PROJECT_DIR$/src/components/discover/discover.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/layout.js" afterPath="$PROJECT_DIR$/src/components/layout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/index.js" afterPath="$PROJECT_DIR$/src/pages/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/typography.js" afterPath="$PROJECT_DIR$/src/utils/typography.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/footer/footer.module.css" afterPath="$PROJECT_DIR$/src/components/footer/footer.module.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/contentTemplate.js" afterPath="$PROJECT_DIR$/src/templates/contentTemplate.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,29 +18,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/layout.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="41" column="42" lean-forward="false" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
-              <folding>
-                <element signature="e#119#153#0" expanded="true" />
-                <element signature="e#241#278#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="public.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/public.md">
           <provider selected="true" editor-type-id="text-editor">
@@ -87,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kaplan.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kaplan.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/discover/kaplan.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -97,23 +70,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="whatsNew.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/whatsNew/whatsNew.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="36" column="68" lean-forward="false" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
-              <folding>
-                <element signature="e#113#143#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="33" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="33" />
+              <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contentTemplate.module.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/contentTemplate.module.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contentTemplate.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/contentTemplate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="42" column="33" lean-forward="true" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.module.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/footer/footer.module.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="545">
+              <caret line="85" column="30" lean-forward="false" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -124,9 +115,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-              <folding>
-                <marker date="1551335394327" expanded="true" signature="681474:683030" ph="{...}" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -186,7 +175,6 @@
         <option value="$PROJECT_DIR$/src/components/header/header.js" />
         <option value="$PROJECT_DIR$/src/components/whatsNew/whatsNew.js" />
         <option value="$PROJECT_DIR$/src/styles/xenaFonts.module.css" />
-        <option value="$PROJECT_DIR$/src/components/footer/footer.module.css" />
         <option value="$PROJECT_DIR$/src/components/header/header.module.css" />
         <option value="$PROJECT_DIR$/src/components/discover/discover.module.css" />
         <option value="$PROJECT_DIR$/src/components/whatsNew/whatsNew.module.css" />
@@ -194,7 +182,6 @@
         <option value="$PROJECT_DIR$/src/templates/contentTemplate.module.css" />
         <option value="$PROJECT_DIR$/src/components/layout.module.css" />
         <option value="$PROJECT_DIR$/src/components/layout.js" />
-        <option value="$PROJECT_DIR$/src/templates/contentTemplate.js" />
         <option value="$PROJECT_DIR$/src/pages/404.module.css" />
         <option value="$PROJECT_DIR$/src/pages/404.js" />
         <option value="$PROJECT_DIR$/content/public.md" />
@@ -218,6 +205,8 @@
         <option value="$PROJECT_DIR$/content/discover/share-data.md" />
         <option value="$PROJECT_DIR$/content/share-data.md" />
         <option value="$PROJECT_DIR$/content/discover/kaplan.md" />
+        <option value="$PROJECT_DIR$/src/templates/contentTemplate.js" />
+        <option value="$PROJECT_DIR$/src/components/footer/footer.module.css" />
       </list>
     </option>
   </component>
@@ -308,6 +297,13 @@
               <item name="xena-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="footer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xena-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xena-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="whatsNew" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -390,7 +386,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64102000" />
+    <option name="totallyTimeSpent" value="65429000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="110" y="23" width="1810" height="1027" extended-state="0" />
@@ -466,8 +462,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/whatsNew/exon.png" />
-    <entry file="file://$PROJECT_DIR$/content/twitter/images/barGraph.png" />
     <entry file="file://$PROJECT_DIR$/content/twitter/images/genome.png" />
     <entry file="file://$PROJECT_DIR$/content/twitter/images/feb7.jpg" />
     <entry file="file://$PROJECT_DIR$/content/twitter/twitter.md">
@@ -519,7 +513,7 @@
         <state relative-caret-position="420">
           <caret line="36" column="68" lean-forward="false" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
           <folding>
-            <element signature="e#113#143#0" expanded="true" />
+            <element signature="e#113#143#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -528,13 +522,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/footer/footer.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -602,8 +590,8 @@
         <state relative-caret-position="540">
           <caret line="41" column="42" lean-forward="false" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
           <folding>
-            <element signature="e#119#153#0" expanded="true" />
-            <element signature="e#241#278#0" expanded="true" />
+            <element signature="e#119#153#0" expanded="false" />
+            <element signature="e#241#278#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -620,6 +608,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1761">
           <caret line="153" column="19" lean-forward="false" selection-start-line="153" selection-start-column="19" selection-end-line="153" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -627,21 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="44" lean-forward="false" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/contentTemplate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="34" column="48" lean-forward="false" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/contentTemplate.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -814,6 +788,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/contentTemplate.module.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/contentTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="42" column="33" lean-forward="true" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/footer/footer.module.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="85" column="30" lean-forward="false" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
           <folding />
         </state>
       </provider>

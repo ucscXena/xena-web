@@ -41,10 +41,10 @@ export default ({data}) => {
 								<span>{post.frontmatter.date}</span>
 							</div>
 							<div>
-								<a href={'https://twitter.com/share?url=https://xena.ucsc.edu' + post.frontmatter.path + ';text=Xena Public Data Hubs;via=UCSCXena'}
+								<a href={'https://twitter.com/share?url=https://xena.ucsc.edu' + post.frontmatter.path + ';text=' + post.frontmatter.title + ';via=UCSCXena'}
 								   alt='Share Twitter' target='_blank' rel='noopener noreferrer'>
 									<FontAwesomeIcon icon={faTwitter}/></a>
-								<a href={'mailto:?Subject=UCSC Xena;Body=Xena Public Data Hubs https://xena.ucsc.edu' + post.frontmatter.path}
+								<a href={'mailto:?Subject=UCSC Xena;Body=' + post.frontmatter.title + ';https://xena.ucsc.edu' + post.frontmatter.path}
 								   alt='Share Mail' target='_blank' rel='noopener noreferrer'>
 									<FontAwesomeIcon icon={faEnvelope}/></a>
 							</div>
