@@ -26,17 +26,13 @@ We host many versions of the TCGA data, including:
 - NCI60 <link>
 
 ##What are you interested in doing?
-1. Compare tumor vs normal -> TCGA TARGET GTEx
-2. View latest TCGA data -> TCGA PanCan
-3. View latest TCGA data on hg38 -> GDC datasets
-4. View intronic mutations -> ICGC
-5. Look at a specific cancer type -> gdc
-6. Look at more than one cancer type together -> pancan atlas
-
-??Spreadsheet below. Provide 'visualize' links to each of these with
+- Compare tumor vs normal -> TCGA TARGET GTEx
+- View latest TCGA data -> TCGA PanCan
+- View latest TCGA data on hg38 -> GDC datasets
+- View intronic mutations -> ICGC
+- Look at a specific cancer type -> gdc
+- Look at more than one cancer type together -> pancan atlas
 
 ##Interested in a specific type of expression?
-Add expression table from BME110 presentation
-
 Don't see a study or dataset that you are interested in? [Set up a hub](./private), for yourself or your group, with the data you need.
 

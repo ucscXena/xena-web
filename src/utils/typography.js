@@ -120,9 +120,13 @@ const typography = new Typography({
 				...adjustFontSizeTo('20px'),
 				fontWeight: 300,
 				letterSpacing: '0.15px',
-				lineHeight: '24px',
+				lineHeight: '28px',
 				margin: '0 0 32px',
 			},
+			hr: {
+				backgroundColor: 'rgba(0, 0, 0, 0.06)',
+				margin: '24px 0'
+			}
 		}
 	}
 });

@@ -83,6 +83,7 @@
 
 	/* Dot */
 	.footerLinks a:not(:last-of-type):after {
+		color: var(--primary);
 		content: "\b7";
 		margin: 0 16px;
 	}

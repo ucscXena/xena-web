@@ -35,23 +35,23 @@ export default ({data}) => {
 				<div className={compStyles.markdownContent}>
 					<div className={globalStyles.contentWrapper}>
 						<h1>{post.frontmatter.title}</h1>
-						<div className={classNames(fontStyles.mdCaption, compStyles.pagePost)}>
+						{post.frontmatter.hidePagePost ? null : <div className={classNames(fontStyles.mdCaption, compStyles.pagePost)}>
 							<div>
 								<span>{post.frontmatter.author}</span>
 								<span>{post.frontmatter.date}</span>
 							</div>
 							<div>
-								<a href={'https://twitter.com/share?url=https://xena.ucsc.edu' + post.frontmatter.path + ';text=Xena Public Data Hubs;via=UCSCXena'}
+								<a href={'https://twitter.com/share?url=https://xena.ucsc.edu' + post.frontmatter.path + ';text=' + post.frontmatter.title + ';via=UCSCXena'}
 								   alt='Share Twitter' target='_blank' rel='noopener noreferrer'>
 									<FontAwesomeIcon icon={faTwitter}/></a>
-								<a href={'mailto:?Subject=UCSC Xena;Body=Xena Public Data Hubs https://xena.ucsc.edu' + post.frontmatter.path}
+								<a href={'mailto:?Subject=UCSC Xena;Body=' + post.frontmatter.title + ';https://xena.ucsc.edu' + post.frontmatter.path}
 								   alt='Share Mail' target='_blank' rel='noopener noreferrer'>
 									<FontAwesomeIcon icon={faEnvelope}/></a>
 							</div>
-						</div>
+						</div>}
 						<div dangerouslySetInnerHTML={{__html: post.html}}/>
-						<a className={compStyles.editContent} href={editPath} alt='Edit Page' target='_blank'
-						   rel='noopener noreferrer'>Improve this page</a>
+						{post.frontmatter.hideImprovePage ? null : <a className={compStyles.editContent} href={editPath} alt='Edit Page' target='_blank'
+						   rel='noopener noreferrer'>Improve this page</a>}
 					</div>
 				</div>
 			</div>
@@ -68,6 +68,8 @@ query($slug: String!) {
 	author
 	path
 	date
+	hidePagePost
+	hideImprovePage
 }
 }
 }

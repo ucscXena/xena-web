@@ -2,14 +2,14 @@
  * UCSC Xena Web
  * https://xena.ucsc.edu/
  *
- * Gatsby configuration file.
+ * UCSC Xena Web configuration file.
  */
 
 module.exports = {
 	siteMetadata: {
 		title: `UCSC Xena`,
-		description: 'X',
-		author: 'xx'
+		description: `Securely analyze and visualize your private functional genomics data set in the context of public and shared genomic/phenotypic data sets.`,
+		author: `UCSC Xena Team`
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,
