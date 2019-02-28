@@ -79,8 +79,7 @@ export default ({data}) => {
 								start?
 								Jump in with one of our
 								tutorials or "How do I …" walkthroughs</p>
-							<a className={classNames(globalStyles.xenaButton, globalStyles.white)} alt='Tutorials'
-							   href='https://xena.ucsc.edu/getting-started/' target='_blank' rel='noopener noreferrer'>Tutorials</a>
+							<Link className={classNames(globalStyles.xenaButton, globalStyles.white)} to='/getting-started'>Tutorials</Link>
 						</div>
 					</div>
 				</div>

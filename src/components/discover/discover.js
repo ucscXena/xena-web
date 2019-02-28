@@ -34,12 +34,8 @@ class Discover extends React.Component {
 							{link.childMarkdownRemark.frontmatter.hrefLink ?
 								<div className={classNames(globalStyles.roundImage, compStyles.bgLearnMore)}>
 									<a href={link.childMarkdownRemark.frontmatter.hrefLink} alt='Discover'
-									   target='_blank'
-									   rel='noopener noreferrer'
-									   className={classNames(globalStyles.xenaButton, globalStyles.learnMore, globalStyles.small)}>
-										Learn
-										More
-									</a>
+									   className={classNames(globalStyles.xenaButton, globalStyles.learnMore, globalStyles.small)}>Learn
+										More</a>
 								</div> : null}
 						</div>
 						<a href={link.childMarkdownRemark.frontmatter.hrefLink ? link.childMarkdownRemark.frontmatter.hrefLink : null}
