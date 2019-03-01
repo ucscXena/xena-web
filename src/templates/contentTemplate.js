@@ -25,6 +25,9 @@ let classNames = require('classnames');
 export default ({data}) => {
 	const post = data.markdownRemark;
 	const docPath = post.frontmatter.path;
+	const docTitle = post.frontmatter.title;
+	const socialsPath = 'https://xena.ucsc.edu' + docPath;
+	const socialsTitle = encodeURI(docTitle);
 	const editPath = 'https://github.com/ucscXena/xena-web/blob/master/content' + docPath + '.md';
 
 	return (
@@ -32,7 +35,7 @@ export default ({data}) => {
 			<div className={classNames(globalStyles.wrapper, globalStyles.wrapperFlex)}>
 				<div className={compStyles.markdownContent}>
 					<div className={globalStyles.contentWrapper}>
-						<h1>{post.frontmatter.title}</h1>
+						<h1>{docTitle}</h1>
 						{post.frontmatter.hidePagePost ? null :
 							<div className={classNames(fontStyles.mdCaption, compStyles.pagePost)}>
 								<div>
@@ -40,10 +43,10 @@ export default ({data}) => {
 									<span>{post.frontmatter.date}</span>
 								</div>
 								<div>
-									<a href={'https://twitter.com/share?url=https://xena.ucsc.edu' + post.frontmatter.path + ';text=' + post.frontmatter.title + ';via=UCSCXena'}
+									<a href={'https://twitter.com/share?url=' + socialsPath + ';text=' + docTitle + ';via=UCSCXena'}
 									   alt='Share Twitter' target='_blank' rel='noopener noreferrer'>
 										<FontAwesomeIcon icon={faTwitter}/></a>
-									<a href={'mailto:?Subject=UCSC Xena;Body=' + post.frontmatter.title + ';https://xena.ucsc.edu' + post.frontmatter.path}
+									<a href={'mailto:?subject=UCSC Xena&body=' + socialsTitle + '%0D%0A' + socialsPath}
 									   alt='Share Mail' target='_blank' rel='noopener noreferrer'>
 										<FontAwesomeIcon icon={faEnvelope}/></a>
 								</div>
