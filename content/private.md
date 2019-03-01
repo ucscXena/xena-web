@@ -1,7 +1,7 @@
 ---
 path: "/private"
 date: "26 February 2019"
-title: "View your own private data, or data you are interested in from a paper"
+title: "View your own private data, or data from a pape"
 author: "Mary Goldman"
 ---
 
