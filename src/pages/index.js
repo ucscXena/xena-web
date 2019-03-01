@@ -166,8 +166,7 @@ class Index extends React.Component {
 							</div>
 							<div
 								className={classNames(globalStyles.contentCol4, compStyles.private)}>
-								<h5 className={fontStyles.sectionTitle}>View your own private data, or data you are
-									interested in from a paper</h5>
+								<h5 className={fontStyles.sectionTitle}>View your own private data, or data from a paper</h5>
 								<h6 className={fontStyles.sectionSubtitle}>View your data, securely and privately. Our
 									step-by-step wizard will guide you
 									whether you're on a Windows or Mac.</h6>
