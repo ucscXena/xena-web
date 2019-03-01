@@ -8,14 +8,12 @@
 // Core dependencies
 import React from 'react';
 import {graphql} from "gatsby"
-
-// App dependencies
-import Layout from '../components/layout';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import {faTwitter} from '@fortawesome/free-brands-svg-icons';
 
-// Images
+// App dependencies
+import Layout from '../components/layout';
 
 // Styles
 import compStyles from './contentTemplate.module.css';
@@ -35,23 +33,25 @@ export default ({data}) => {
 				<div className={compStyles.markdownContent}>
 					<div className={globalStyles.contentWrapper}>
 						<h1>{post.frontmatter.title}</h1>
-						{post.frontmatter.hidePagePost ? null : <div className={classNames(fontStyles.mdCaption, compStyles.pagePost)}>
-							<div>
-								<span>{post.frontmatter.author}</span>
-								<span>{post.frontmatter.date}</span>
-							</div>
-							<div>
-								<a href={'https://twitter.com/share?url=https://xena.ucsc.edu' + post.frontmatter.path + ';text=' + post.frontmatter.title + ';via=UCSCXena'}
-								   alt='Share Twitter' target='_blank' rel='noopener noreferrer'>
-									<FontAwesomeIcon icon={faTwitter}/></a>
-								<a href={'mailto:?Subject=UCSC Xena;Body=' + post.frontmatter.title + ';https://xena.ucsc.edu' + post.frontmatter.path}
-								   alt='Share Mail' target='_blank' rel='noopener noreferrer'>
-									<FontAwesomeIcon icon={faEnvelope}/></a>
-							</div>
-						</div>}
+						{post.frontmatter.hidePagePost ? null :
+							<div className={classNames(fontStyles.mdCaption, compStyles.pagePost)}>
+								<div>
+									<span>{post.frontmatter.author}</span>
+									<span>{post.frontmatter.date}</span>
+								</div>
+								<div>
+									<a href={'https://twitter.com/share?url=https://xena.ucsc.edu' + post.frontmatter.path + ';text=' + post.frontmatter.title + ';via=UCSCXena'}
+									   alt='Share Twitter' target='_blank' rel='noopener noreferrer'>
+										<FontAwesomeIcon icon={faTwitter}/></a>
+									<a href={'mailto:?Subject=UCSC Xena;Body=' + post.frontmatter.title + ';https://xena.ucsc.edu' + post.frontmatter.path}
+									   alt='Share Mail' target='_blank' rel='noopener noreferrer'>
+										<FontAwesomeIcon icon={faEnvelope}/></a>
+								</div>
+							</div>}
 						<div dangerouslySetInnerHTML={{__html: post.html}}/>
-						{post.frontmatter.hideImprovePage ? null : <a className={compStyles.editContent} href={editPath} alt='Edit Page' target='_blank'
-						   rel='noopener noreferrer'>Improve this page</a>}
+						{post.frontmatter.hideImprovePage ? null :
+							<a className={compStyles.editContent} href={editPath} alt='Edit Page' target='_blank'
+							   rel='noopener noreferrer'>Improve this page</a>}
 					</div>
 				</div>
 			</div>

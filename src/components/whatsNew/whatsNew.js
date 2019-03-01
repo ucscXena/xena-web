@@ -6,14 +6,10 @@
  */
 
 // Core dependencies
-import Img from "gatsby-image"
 import React from 'react';
-
-// App dependencies
+import Img from "gatsby-image"
 import {faTwitter} from '@fortawesome/free-brands-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-
-// Images
 
 // Styles
 import compStyles from './whatsNew.module.css';

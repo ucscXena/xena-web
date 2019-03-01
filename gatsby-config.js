@@ -46,6 +46,12 @@ module.exports = {
 				}
 			}
 		},
+		{
+			resolve: 'gatsby-plugin-mailchimp',
+			options: {
+				endpoint: '//ucsc.us13.list-manage.com/subscribe/post?u=854efce54e145c49d29e0bb59&amp;id=65986d18f3',
+			},
+		},
 		`gatsby-plugin-manifest`,
 		{
 			resolve: 'gatsby-plugin-react-css-modules',

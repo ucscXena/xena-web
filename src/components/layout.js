@@ -6,9 +6,9 @@
  */
 
 // Core dependencies
-import Helmet from 'react-helmet';
-import normalize from 'normalize.css';
 import React from 'react';
+import normalize from 'normalize.css';
+import Helmet from 'react-helmet';
 
 // App dependencies
 import Footer from './footer/footer';

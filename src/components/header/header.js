@@ -6,10 +6,8 @@
  */
 
 // Core dependencies
-import { Link } from 'gatsby';
 import React from 'react';
-
-// App dependencies
+import {Link} from 'gatsby';
 
 // Images
 import headerLogo from '../../../images/logo/logo-ucsc@3x.png';
@@ -51,14 +49,18 @@ class Header extends React.Component {
 				<div className={globalStyles.wrapper}>
 					<div className={classNames(compStyles.navBar, {[compStyles.open]: this.state.menuOpen})}>
 						<Link to='/'><img src={headerLogo} alt='UCSC Xena'/></Link>
-						{this.props.markdownPages ? null : <div className={compStyles.navBarMenu} onClick={this.toggleMenu}><span/></div>}
+						{this.props.markdownPages ? null :
+							<div className={compStyles.navBarMenu} onClick={this.toggleMenu}><span/></div>}
 						{this.props.markdownPages ? null : <div className={getFontClass()}>
-							<Link to='/#overview' onClick={this.state.menuOpen? this.toggleMenu : null}>Overview</Link>
-							<Link to='/#analysis' onClick={this.state.menuOpen? this.toggleMenu : null}>Analysis</Link>
-							<Link to='/#tutorials' onClick={this.state.menuOpen? this.toggleMenu : null}>Tutorials</Link>
-							<Link to='/#whatsnew' onClick={this.state.menuOpen? this.toggleMenu : null}>What's New</Link>
-							<Link to='/cite-us' onClick={this.state.menuOpen? this.toggleMenu : null}>Cite Us</Link>
-							<Link to='/#subscribe' onClick={this.state.menuOpen? this.toggleMenu : null}>Subscribe</Link>
+							<Link to='/#overview' onClick={this.state.menuOpen ? this.toggleMenu : null}>Overview</Link>
+							<Link to='/#analysis' onClick={this.state.menuOpen ? this.toggleMenu : null}>Analysis</Link>
+							<Link to='/#tutorials'
+								  onClick={this.state.menuOpen ? this.toggleMenu : null}>Tutorials</Link>
+							<Link to='/#whatsnew' onClick={this.state.menuOpen ? this.toggleMenu : null}>What's
+								New</Link>
+							<Link to='/cite-us' onClick={this.state.menuOpen ? this.toggleMenu : null}>Cite Us</Link>
+							<Link to='/#subscribe'
+								  onClick={this.state.menuOpen ? this.toggleMenu : null}>Subscribe</Link>
 						</div>}
 					</div>
 				</div>
