@@ -7,10 +7,10 @@
 
 // Core dependencies
 import React from 'react';
+import {Link} from 'gatsby';
 
 // App dependencies
 import Layout from '../components/layout';
-import { Link } from 'gatsby';
 
 // Styles
 import compStyles from './404.module.css';
@@ -23,10 +23,10 @@ const NotFoundPage = () => (
 		<div className={classNames(globalStyles.wrapper, globalStyles.wrapperFlex)}>
 			<div className={compStyles.errorPage}>
 				<div className={globalStyles.contentWrapper}>
-				<h1>Page Not Found</h1>
-				<p>We can’t find the page you were looking for.</p>
+					<h1>Page Not Found</h1>
+					<p>We can’t find the page you were looking for.</p>
 					<p>Return to the <Link to='/'>home page</Link>.</p>
-			</div>
+				</div>
 			</div>
 		</div>
 	</Layout>

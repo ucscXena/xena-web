@@ -66,6 +66,7 @@
 .xenaButton {
 	composes: mdSubtitle2 from './xenaFonts.module.css';
 	align-items: center;
+	border: none; /* Required to override <button> */
 	border-radius: 4px;
 	display: flex;
 	height: 48px;
@@ -77,6 +78,10 @@
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	width: 214px;
+}
+
+.xenaButton:focus {
+	outline: none;
 }
 
 .xenaButton.small {

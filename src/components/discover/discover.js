@@ -6,10 +6,8 @@
  */
 
 // Core dependencies
-import Img from "gatsby-image"
 import React from 'react';
-
-// Images
+import Img from "gatsby-image"
 
 // Styles
 import compStyles from './discover.module.css';
