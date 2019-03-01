@@ -21,9 +21,9 @@ class Footer extends React.Component {
 				<div className={globalStyles.wrapper}>
 					<div className={compStyles.footerLinks}>
 						<div className={fontStyles.mdBody2}>
-							<a href='/'>UCSC</a>
-							<a href='/'>UCSC Genomics Institute</a>
-							<a href='/'>UCSC Computational Genomics Laboratory</a>
+							<a href='https://www.ucsc.edu/'>UCSC</a>
+							<a href='https://ucscgenomics.soe.ucsc.edu/'>UCSC Genomics Institute</a>
+							<a href='https://cgl.genomics.ucsc.edu/'>UCSC Computational Genomics Laboratory</a>
 						</div>
 						<div className={fontStyles.mdBody2}>
 							<a href='https://twitter.com/ucscxena' target='_blank' rel='noopener noreferrer'>Twitter</a>
