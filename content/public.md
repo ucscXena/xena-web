@@ -15,7 +15,7 @@ TCGA is our most used dataset with it's rich genomic data (somatic mutation, gen
 
 We host serveral versions of the TCGA data:
 - [TCGA Pan-Cancer Atlas](https://xenabrowser.net/datapages/?cohort=TCGA%20Pan-Cancer%20(PANCAN))
-- [TCGA data from GDC](https://xenabrowser.net/datapages/?host=https%3A%2F%2Fgdc.xenahubs.net)
+- [TCGA data from Genomic Data Commons](https://xenabrowser.net/datapages/?host=https%3A%2F%2Fgdc.xenahubs.net)
 - [TCGA data that has been co-analyzed with GTEx normal samples and can be used to compare tumor vs normal expression from the same tissue of origin](https://xenabrowser.net/datapages/?cohort=TCGA%20TARGET%20GTEx)
 - [Legacy TCGA data (pre Pan-Cancer Atlas)](https://xenabrowser.net/datapages/?hub=https://tcga.xenahubs.net:443)
 
