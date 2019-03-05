@@ -111,7 +111,7 @@ class Index extends React.Component {
 		return x.node.frontmatter.component === "twitter";
 	}).map(n => n.node.frontmatter)[0];
 
-	var acknowledgmentSection = () => {
+	acknowledgmentSection = () => {
 		return (
 			<div className={globalStyles.wrapper}>
 				<div className={classNames(globalStyles.section, globalStyles.separator, compStyles.partners)}>
@@ -145,7 +145,7 @@ class Index extends React.Component {
 				</div>
 			</div>
 		);
-	}
+	};
 
 	render() {
 		return (
@@ -254,7 +254,7 @@ class Index extends React.Component {
 						</a>
 					</div>
 				</div>
-				{this.acknowledgmentSection()}
+				{this.acknowledgmentSection}
 			</Layout>
 		)
 	}
