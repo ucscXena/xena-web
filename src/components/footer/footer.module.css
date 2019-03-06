@@ -12,14 +12,19 @@
 	flex-direction: column;
 }
 
+/* Link - UCSC and socials */
+.footerLinks, .disclaimer, .footerLinks > div, .disclaimer > span {
+	padding: 0 8px;
+}
+
 /* Links container */
 .footerLinks {
-	padding: 48px 8px;
+	margin-top: 32px;
 }
 
 /* Disclaimer container */
 .disclaimer {
-	padding: 16px;
+	margin: 12px 0 32px;
 }
 
 /* Link and disclaimer alignment */
@@ -29,14 +34,9 @@
 	width: 100%;
 }
 
-/* Link - UCSC and socials */
-.footerLinks > div {
-	padding: 8px;
-}
-
 /* Socials */
 .footerLinks > div + div {
-	margin-top: 24px;
+	margin-top: 12px;
 }
 
 /* Link and social */
@@ -46,18 +46,13 @@
 
 /* Link and social */
 .footerLinks a {
-	color: var(--primary);
+	color: var(--white);
 	text-decoration: none;
 }
 
-/* Link and social hover */
-.footerLinks a:hover {
-	color: var(--accentgreen);
-}
-
 /* Disclaimer */
-.disclaimer span + span {
-	margin-top: 8px;
+.disclaimer > span {
+	font-weight: 300;
 }
 
 /**
@@ -67,7 +62,7 @@
 @media screen and (min-width: 960px) {
 
 	/* Links container */
-	.footerLinks, .footerLinks > div {
+	.footerLinks, .footerLinks > div, .disclaimer, .disclaimer > span {
 		flex-direction: row;
 		width: unset;
 	}
@@ -83,17 +78,12 @@
 
 	/* Dot */
 	.footerLinks a:not(:last-of-type):after {
-		color: var(--primary);
+		color: var(--white);
 		content: "\b7";
 		margin: 0 16px;
 	}
 
 	.footerLinks > div + div {
 		margin-top: 0;
-	}
-
-	/* Disclaimer */
-	.disclaimer span {
-		text-align: left;
 	}
 }
