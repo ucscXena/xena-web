@@ -16,7 +16,7 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-favicon`,
 			options: {
-				logo: "./images/favicon/favicon.png",
+				logo: './images/favicon/favicon.png',
 
 				// WebApp Manifest Configuration
 				appName: null, // Inferred with your package.json
@@ -47,14 +47,14 @@ module.exports = {
 			}
 		},
 		{
-			resolve: 'gatsby-plugin-mailchimp',
+			resolve: `gatsby-plugin-mailchimp`,
 			options: {
 				endpoint: '//ucsc.us13.list-manage.com/subscribe/post?u=854efce54e145c49d29e0bb59&amp;id=65986d18f3',
 			},
 		},
 		`gatsby-plugin-manifest`,
 		{
-			resolve: 'gatsby-plugin-react-css-modules',
+			resolve: `gatsby-plugin-react-css-modules`,
 			options: {
 				filetypes: {
 					'.scss': {syntax: 'postcss-scss'},
@@ -84,17 +84,17 @@ module.exports = {
 			options: {
 				plugins: [
 					{
-						resolve: "gatsby-remark-custom-blocks",
+						resolve: `gatsby-remark-custom-blocks`,
 						options: {
 							blocks: {
 								contentHero: {
-									classes: "contentHero",
+									classes: 'contentHero',
 								}
 							}
 						}
 					},
 					{
-						resolve: "gatsby-remark-embed-video",
+						resolve: `gatsby-remark-embed-video`,
 						options: {
 							width: 550,
 							ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
@@ -102,6 +102,7 @@ module.exports = {
 							noIframeBorder: true //Optional: Disable insertion of <style> border: 0
 						}
 					},
+					`gatsby-remark-external-links`,
 					`gatsby-remark-responsive-iframe`,
 					{
 						resolve: `gatsby-remark-images`,
@@ -117,6 +118,6 @@ module.exports = {
 		`gatsby-transformer-sharp`,
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.app/offline
-		// 'gatsby-plugin-offline',
+		// `gatsby-plugin-offline`,
 	],
 };
