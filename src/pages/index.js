@@ -111,6 +111,42 @@ class Index extends React.Component {
 		return x.node.frontmatter.component === "twitter";
 	}).map(n => n.node.frontmatter)[0];
 
+	acknowledgmentSection = () => {
+		return (
+			<div className={globalStyles.wrapper}>
+				<div className={classNames(globalStyles.section, globalStyles.separator, compStyles.partners)}>
+					<div>
+						<a href='https://www.cancer.gov/' target='_blank' rel='noopener noreferrer' alt='NCI'><img
+							src={nci} alt='National Cancer Institute'/></a>
+						<a href='http://itcr.nci.nih.gov/' target='_blank' rel='noopener noreferrer'
+						   alt='NCIGA'><img
+							src={nciGA} alt='The Cancer Genome Atlas'/></a>
+						<a href='https://cancergenome.nih.gov/' target='_blank' rel='noopener noreferrer'
+						   alt='NCIITCR'><img
+							src={nciITCR}
+							alt='National Cancer Institute Informatics Technology for Cancer Research'/></a>
+					</div>
+					<div>
+						<a href='https://www.soe.ucsc.edu/' target='_blank' rel='noopener noreferrer'
+						   alt='Treehouse'><img src={treehouse} alt='Treehouse Childhood Cancer Initiative'/></a>
+						<a href='https://dcc.icgc.org/pcawg#!%2Fmutations' target='_blank' rel='noopener noreferrer'
+						   alt='PCAWG'><img src={pcawg} alt='PCAWG'/></a>
+						<a href='https://www.biojs.net/' target='_blank' rel='noopener noreferrer' alt='bioJS'><img
+							src={biojs} alt='bioJS'/></a>
+						<a href='https://datascience.nih.gov/bd2k' target='_blank' rel='noopener noreferrer'
+						   alt='NIH'><img src={nih} alt='NIH'/></a>
+						<a href='https://www.ga4gh.org/' target='_blank' rel='noopener noreferrer'
+						   alt='Global Alliance'><img src={globalAlliance} alt='Global Alliance'/></a>
+					</div>
+					<div>
+						<a href='https://genomics.soe.ucsc.edu/' target='_blank' rel='noopener noreferrer'
+						   alt='UCSC Genomics Institute'><img src={ucscGI} alt='UCSC Genomics Institute'/></a>
+					</div>
+				</div>
+			</div>
+		);
+	};
+
 	render() {
 		return (
 			<Layout>
@@ -218,37 +254,7 @@ class Index extends React.Component {
 						</a>
 					</div>
 				</div>
-				<div className={globalStyles.wrapper}>
-					<div className={classNames(globalStyles.section, globalStyles.separator, compStyles.partners)}>
-						<div>
-							<a href='https://www.cancer.gov/' target='_blank' rel='noopener noreferrer' alt='NCI'><img
-								src={nci} alt='National Cancer Institute'/></a>
-							<a href='http://itcr.nci.nih.gov/' target='_blank' rel='noopener noreferrer'
-							   alt='NCIGA'><img
-								src={nciGA} alt='The Cancer Genome Atlas'/></a>
-							<a href='https://cancergenome.nih.gov/' target='_blank' rel='noopener noreferrer'
-							   alt='NCIITCR'><img
-								src={nciITCR}
-								alt='National Cancer Institute Informatics Technology for Cancer Research'/></a>
-						</div>
-						<div>
-							<a href='https://www.soe.ucsc.edu/' target='_blank' rel='noopener noreferrer'
-							   alt='Treehouse'><img src={treehouse} alt='Treehouse Childhood Cancer Initiative'/></a>
-							<a href='https://dcc.icgc.org/pcawg#!%2Fmutations' target='_blank' rel='noopener noreferrer'
-							   alt='PCAWG'><img src={pcawg} alt='PCAWG'/></a>
-							<a href='https://www.biojs.net/' target='_blank' rel='noopener noreferrer' alt='bioJS'><img
-								src={biojs} alt='bioJS'/></a>
-							<a href='https://datascience.nih.gov/bd2k' target='_blank' rel='noopener noreferrer'
-							   alt='NIH'><img src={nih} alt='NIH'/></a>
-							<a href='https://www.ga4gh.org/' target='_blank' rel='noopener noreferrer'
-							   alt='Global Alliance'><img src={globalAlliance} alt='Global Alliance'/></a>
-						</div>
-						<div>
-							<a href='https://genomics.soe.ucsc.edu/' target='_blank' rel='noopener noreferrer'
-							   alt='UCSC Genomics Institute'><img src={ucscGI} alt='UCSC Genomics Institute'/></a>
-						</div>
-					</div>
-				</div>
+				{this.acknowledgmentSection}
 			</Layout>
 		)
 	}
