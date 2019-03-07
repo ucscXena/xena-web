@@ -16,13 +16,15 @@ To compare tumor vs normal, you will need to use the [TCGA TARGET GTEx study](ht
 
 ##Example
 
-In [this example](https://xenabrowser.net/?bookmark=057c5fe67d5d79488b843d7a6e1a9840) we are looking to compare MYC gene expression between normal colon tissue from GTEx to TCGA colon adenocarcinoma.
+In [this example](https://xenabrowser.net/?bookmark=2b707e21a992c2963e949b3e5241cc70) we are looking to compare MYC gene expression between normal colon tissue from GTEx to TCGA colon adenocarcinoma.
 
 ![example](/images/compare-tissue.png)
 
 [Check it out!](https://xenabrowser.net/?bookmark=2b707e21a992c2963e949b3e5241cc70)
 
 All we have to do now is Click to Add Column to add our favorite gene, click 'gene expression' and click 'Done'. Clicking on the Chart in the upper right will make a box plot comparing average gene expression across our groups, complete with a p-value to test for signficance.
+
+![example](/images/compare-tissue-chart.png)
 
 [Check it out!](https://xenabrowser.net/?bookmark=54a597bb0540b1a5fa8bff622d973e0c)
 
