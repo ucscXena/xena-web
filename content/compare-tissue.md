@@ -12,19 +12,19 @@ While TCGA is a good resource for tumor data, finding normal tissue expression d
 
 You can use the study below for both of these ways. Data from the study is from the UCSC RNA-seq Compendium, where TCGA and GTEx samples are re-analyzed (re-aligned to hg38 genome and expressions are called using RSEM and Kallisto methods) by the same RNA-seq pipeline. Because all samples are processed using an uniform bioinformatic pipeline, batch effect due to different computational processing is eliminated.
 
-To compare tumor vs normal, you will need to use the [TCGA TARGET GTEx study](https://xenabrowser.net/?bookmark=f692a82f02d048d4ca17132461f0dfd7), and then filter down to just the samples you want to compare. There are four gene expression datasets in this study. Two are normalized using with-in sample methods. The 'RSEM norm_count' dataset is normalized by the upper quartile method, the 'RSEM expected_count (DESeq2 standardized)' dataset is by DESeq2 normalization. Therefore, these two gene expression datasets should be used.
-
-Check our [Help Page](https://ucsc-xena.gitbook.io/project/how-do-i/tumor-vs-normal) for more information
+To compare tumor vs normal, you will need to use the [TCGA TARGET GTEx study](https://xenabrowser.net/?bookmark=057c5fe67d5d79488b843d7a6e1a9840), and then filter down to just the samples you want to compare. There are four gene expression datasets in this study. Two are normalized using with-in sample methods. The 'RSEM norm_count' dataset is normalized by the upper quartile method, the 'RSEM expected_count (DESeq2 standardized)' dataset is by DESeq2 normalization. Therefore, these two gene expression datasets should be used.
 
 ##Example
 
-In this example we are looking to compare MYC gene expression between normal colon tissue from GTEx to TCGA colon adenocarcinoma.
+In [this example](https://xenabrowser.net/?bookmark=057c5fe67d5d79488b843d7a6e1a9840) we are looking to compare MYC gene expression between normal colon tissue from GTEx to TCGA colon adenocarcinoma.
 
 ![example](/images/compare-tissue.png)
 
+[Check it out!](https://xenabrowser.net/?bookmark=2b707e21a992c2963e949b3e5241cc70)
+
 All we have to do now is Click to Add Column to add our favorite gene, click 'gene expression' and click 'Done'. Clicking on the Chart in the upper right will make a box plot comparing average gene expression across our groups, complete with a p-value to test for signficance.
 
-[Check it out!](https://xenabrowser.net/?bookmark=2b707e21a992c2963e949b3e5241cc70)
+[Check it out!](https://xenabrowser.net/?bookmark=54a597bb0540b1a5fa8bff622d973e0c)
 
 [Walk-through of this example](https://ucsc-xena.gitbook.io/project/how-do-i/tumor-vs-normal)
 
