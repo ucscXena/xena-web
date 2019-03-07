@@ -12,7 +12,7 @@ UCSC Xena has all the same functionality of the UCSC Cancer Browser plus new too
 
 ![Welcome](./images/welcome-to-ucsc-xena.png)
 
-New to Xena? Get started [here](https://xena.ghost.io/getting-started/) or [jump right in](https://xenabrowser.net/heatmap/)!
+New to Xena? Get started with the [tutorials](https://ucsc-xena.gitbook.io/project/tutorials) or [jump right in](https://xenabrowser.net/heatmap/)!
 
 UCSC Xena can also be used to view your own functional genomics data. Get started [here](/private)!
 

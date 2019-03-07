@@ -254,7 +254,6 @@ class Index extends React.Component {
 						</a>
 					</div>
 				</div>
-				{this.acknowledgmentSection}
 			</Layout>
 		)
 	}
