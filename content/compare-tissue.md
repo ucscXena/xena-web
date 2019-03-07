@@ -22,12 +22,12 @@ In [this example](https://xenabrowser.net/?bookmark=2b707e21a992c2963e949b3e5241
 
 [Check it out!](https://xenabrowser.net/?bookmark=2b707e21a992c2963e949b3e5241cc70)
 
-All we have to do now is Click to Add Column to add our favorite gene, click 'gene expression' and click 'Done'. Clicking on the Chart in the upper right will make a box plot comparing average gene expression across our groups, complete with a p-value to test for signficance.
+All we have to do now is Click to Add Column to add our favorite gene, click 'gene expression' and click 'Done'. Clicking on the Chart in the upper right will make a box plot comparing average gene expression across our groups, complete with a p-value to test for significance.
 
 ![example](/images/compare-tissue-chart.png)
 
 [Check it out!](https://xenabrowser.net/?bookmark=54a597bb0540b1a5fa8bff622d973e0c)
 
-[Walk-through of this example](https://ucsc-xena.gitbook.io/project/how-do-i/tumor-vs-normal)
+[Walk-through of this example](https://ucsc-xena.gitbook.io/project/how-do-i/tumor-vs-normal#walk-through-example)
 
 [More Chart help](https://ucsc-xena.gitbook.io/project/overview-of-features/chart-view-box-plots-scatter-plots-and-bar-charts)
