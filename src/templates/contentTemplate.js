@@ -28,7 +28,7 @@ export default ({data}) => {
 	const docTitle = post.frontmatter.title;
 	const socialsPath = 'https://xena.ucsc.edu' + docPath;
 	const socialsTitle = encodeURI(docTitle);
-	const editPath = 'https://github.com/ucscXena/xena-web/blob/master/content' + docPath + '.md';
+	const editPath = 'https://github.com/ucscXena/xena-web/blob/staging/content' + docPath + '.md';
 
 	return (
 		<Layout markdownPages={true}>
