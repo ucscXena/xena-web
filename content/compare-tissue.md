@@ -14,11 +14,11 @@ The first is normal samples from TCGA itself. These samples are called "solid ti
 
 The second way is to compare to GTEx samples, which has expression data from normal tissue of individuals who do not have cancer. There are typically many more samples in GTEx then TCGA solid tissue normals, however, experimental sample processing are different from TCGA. 
 
-You can use the study below for both of these ways. Data from the study is from the UCSC RNA-seq Compendium, where TCGA and GTEx samples are re-analyzed (re-aligned to hg38 genome and expressions are called using RSEM and Kallisto methods) by the same RNA-seq pipeline. Because all samples are processed using an uniform bioinformatic pipeline, batch effect due to different computational processing is eliminated.
+You can use the study below for both of these ways. Data from the study is from the UCSC RNA-seq Compendium, where TCGA and GTEx samples are re-analyzed (re-aligned to hg38 genome and expressions are called using RSEM and Kallisto methods) by the same RNA-seq pipeline. Because all samples are processed using an uniform bioinformatic pipeline, batch effects due to different computational processing are eliminated.
 
 To compare tumor vs normal, you will need to use the [TCGA TARGET GTEx study](https://xenabrowser.net/?bookmark=057c5fe67d5d79488b843d7a6e1a9840), and then filter down to just the samples you want to compare. There are four gene expression datasets in this study. Two are normalized using with-in sample methods. The 'RSEM norm_count' dataset is normalized by the upper quartile method, the 'RSEM expected_count (DESeq2 standardized)' dataset is by DESeq2 normalization. Therefore, these two gene expression datasets should be used.
 
-##Example
+## Example
 
 In [this example](https://xenabrowser.net/?bookmark=2b707e21a992c2963e949b3e5241cc70) we are looking to compare MYC gene expression between normal colon tissue from GTEx to TCGA colon adenocarcinoma.
 
