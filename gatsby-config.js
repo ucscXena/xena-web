@@ -87,8 +87,17 @@ module.exports = {
 						resolve: `gatsby-remark-custom-blocks`,
 						options: {
 							blocks: {
+								caption: {
+									classes: 'caption'
+								},
 								contentHero: {
-									classes: 'contentHero',
+									classes: 'contentHero'
+								},
+								xenaButtonPeach: {
+									classes: 'xenaButton peach'
+								},
+								xenaButtonYellow: {
+									classes: 'xenaButton yellow'
 								}
 							}
 						}
