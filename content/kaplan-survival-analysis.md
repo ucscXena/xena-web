@@ -10,7 +10,7 @@ author: "Mary Goldman"
 
 Whether you're looking at DNA, RNA, methylation or protein, we can help you determine if a gene affects survival. Stratify your samples by any genomic or phenotypic data (e.g. expression, copy number, subtype, age, etc) and determine if there is a statistically significant survival difference.
 
-Start with our [walk through](https://ucsc-xena.gitbook.io/project/overview-of-features/kaplan-meier-plots), or jump in by going to the [Xena Browser](https://xenabrowser.net) and using the wizard to add the data you would like to stratify your samples into the Visual Spreadsheet. Once your data is on the screen, click the three-dot caret menu at the top of the column and choose 'Kaplan Meier Plot'.
+Start with our [walk through](https://ucsc-xena.gitbook.io/project/overview-of-features/kaplan-meier-plots), or jump in by going to the [Xena Browser](https://xenabrowser.net) and use the wizard to add the data you would like to stratify your samples into the Visual Spreadsheet. Once your data is on the screen, click the three-dot caret menu at the top of the column and choose 'Kaplan Meier Plot'.
 
 ##Example
 ![example](/images/kaplan-survival.png)
