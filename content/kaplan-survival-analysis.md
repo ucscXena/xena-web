@@ -6,7 +6,7 @@ author: "Mary Goldman"
 ---
 
 [[contentHero]]
-| Wondering if a gene (or probe, or clinical value, etc) affects survival? We have survival analyses complete with p-values, custom time cutoff, custom time variable cutoff, and multiple survival endpoints.
+| Wondering if a gene (or probe, or clinical value, etc) affects survival? We have survival analyses complete with p-values, custom time variable cutoff, and multiple survival endpoints.
 
 Whether you're looking at DNA, RNA, methylation or protein, we can help you determine if a gene affects survival. Stratify your samples by any genomic or phenotypic data (e.g. expression, copy number, subtype, age, etc) and determine if there is a statistically significant survival difference.
 
