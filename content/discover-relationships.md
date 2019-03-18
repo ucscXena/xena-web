@@ -25,4 +25,6 @@ Column G is SPOP mutation status and also has a gene diagram at the top. The pos
 
 Here we can see that the fusion calls are highly consistent with the characteristic overexpression of ERG (columns E, F). However, only a subset of those samples in which a fusion was called can be seen to also have the fusion event observed in the copy number data via an intra-chromosomal deletion of chromosome 21 that fuses TMPRSS2 to ERG as shown in columns C and D. This observation is consistent with the 63.3% validation rate described in the paper. SPOP mutations (blue tick marks in column G) are mutually exclusive with the fusion event.
 
-A live Xena Browser view of the figure is at https://xenabrowser.net/?bookmark=fa40b4f1c016a7567e2a22ddbedbbb3b, created using the bookmark functionality. Rows are sorted by the left-most data column (column B) and subsorted on columns thereafter.
+View this example live in the [Xena Browser](https://xenabrowser.net/?bookmark=fa40b4f1c016a7567e2a22ddbedbbb3b).
+
+Rows are sorted by the left-most data column (column B) and subsorted on columns thereafter.
