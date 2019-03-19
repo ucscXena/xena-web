@@ -21,7 +21,8 @@ The new two-subgroup column behaves like any other column and can be used in a K
 (**C**) Compare exon expression across the dynamically creaeted two subgroups. Subgroup labels are customized to "MET splice variant" and "MET splice wt" through display setting adjustment. https://xenabrowser.net/?bookmark=886a9d503a7fb5f14144cb690eefa945
 
 ##User Guide
-https://ucsc-xena.gitbook.io/project/how-do-i/how-do-i-make-subgroups
+[[xenaButtonPeach]]
+| [Learn More](https://ucsc-xena.gitbook.io/project/how-do-i/how-do-i-make-subgroups)
 
 ##Advanced options
 Once the subgroup column is created, users can further customize group labels from "true" or "false" to for exmaple "wild type" or "EGFR mutant" by adjusting the column display settings.

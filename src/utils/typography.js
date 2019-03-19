@@ -28,6 +28,10 @@ const typography = new Typography({
 	],
 	includeNormalize: true,
 	overrideStyles: ({adjustFontSizeTo, scale}, options, styles) => {
+		let peach = '#FF6B6B';
+		let white = '#FFFFFF';
+		let yellow = '#FFE66D';
+		let primary = '#1A535C';
 		return {
 			'body, html': {},
 			'*, *:before, *:after': {
@@ -63,8 +67,8 @@ const typography = new Typography({
 				lineHeight: '24px',
 				margin: '10px 0 10px',
 			},
-			'p + h2, p + h3': {
-				margin: '24px 0 10px',
+			'p + h2, p + h3, .custom-block + h2, .custom-block + h3, ul + h2, ul + h3': {
+				margin: '32px 0 10px',
 			},
 			'a': {
 				color: '#3c4043',
@@ -74,6 +78,14 @@ const typography = new Typography({
 			},
 			'a:focus,a:active,a:hover': {
 				outline: 0,
+			},
+			blockquote: {
+				boxShadow: 'inset 2px 0 0 rgba(0, 0, 0, 0.12)',
+				margin: '0 0 24px',
+				padding: '4px 0',
+			},
+			'blockquote p': {
+				paddingLeft: '12px'
 			},
 			'dd,dl,ol,ul': {
 				margin: '12px 0 24px',
@@ -86,20 +98,12 @@ const typography = new Typography({
 				margin: 0,
 				paddingLeft: '8px',
 			},
+			'ul li:not(:last-of-type)': {
+				marginBottom: '8px',
+			},
 			img: {
 				border: 0,
 				marginBottom: 0,
-			},
-			strong: {
-				fontWeight: '500',
-			},
-			blockquote: {
-				boxShadow: 'inset 2px 0 0 rgba(0, 0, 0, 0.12)',
-				margin: '0 0 24px',
-				padding: '4px 0',
-			},
-			'blockquote p': {
-				paddingLeft: '12px'
 			},
 			pre: {
 				margin: '0 0 24px',
@@ -116,12 +120,67 @@ const typography = new Typography({
 				borderRadius: '0',
 				padding: '0',
 			},
+			strong: {
+				fontWeight: '500',
+			},
+			'td, th': {
+				...adjustFontSizeTo('13px'),
+				padding: '4px 0',
+			},
+			'td:not(:last-of-type), th:not(:last-of-type)': {
+				paddingRight: '16px'
+			},
+			'tr th': {
+				fontWeight: 400
+			},
+			'.caption p': {
+				...adjustFontSizeTo('12px'),
+				fontWeight: '300',
+			},
+			'table + .caption': {
+				margin: '-16px 0 10px',
+			},
 			'.contentHero p': {
 				...adjustFontSizeTo('20px'),
 				fontWeight: 300,
 				letterSpacing: '0.15px',
 				lineHeight: '28px',
 				margin: '0 0 32px',
+			},
+			'.xenaButton': {
+				margin: '16px 0',
+			},
+			'.xenaButton a': {
+				...adjustFontSizeTo('16px'),
+				alignItems: 'center',
+				border: 'none',
+				borderRadius: '4px',
+				display: 'inline-flex',
+				fontWeight: '500',
+				height: '48px',
+				justifyContent: 'center',
+				letterSpacing: '0.1px',
+				lineHeight: '24px',
+				minWidth: '158px',
+				padding: '0 16px',
+				textDecoration: 'none',
+				transition: 'all 0.3s ease',
+			},
+			'.xenaButton.peach a': {
+				backgroundColor: peach,
+				color: white,
+			},
+			'.xenaButton.peach a:hover': {
+				backgroundColor: yellow,
+				color: primary,
+			},
+			'.xenaButton.yellow a': {
+				backgroundColor: yellow,
+				color: primary,
+			},
+			'.xenaButton.yellow a:hover': {
+				backgroundColor: peach,
+				color: white,
 			},
 			hr: {
 				backgroundColor: 'rgba(0, 0, 0, 0.06)',
