@@ -137,8 +137,8 @@ const typography = new Typography({
 				...adjustFontSizeTo('12px'),
 				fontWeight: '300',
 			},
-			'table + .caption': {
-				margin: '-16px 0 10px',
+			'table + .caption, p + .caption': {
+				margin: '-16px 0 16px',
 			},
 			'.contentHero p': {
 				...adjustFontSizeTo('20px'),

@@ -11,9 +11,14 @@
 	align-items: center;
 	display: flex;
 	flex: 1;
-	height: 125px;
+	height: 80px;
 	justify-content: space-between;
 	padding: 0 16px;
+}
+
+/* Backpages Xena logo */
+.navBar.backPages > img {
+	max-height: 42px;
 }
 
 /* Logo wrapper */
@@ -23,7 +28,7 @@
 
 /* Logo */
 .navBar img {
-	max-width: 225px;
+	max-width: 150px;
 }
 
 /* Hamburger */
@@ -139,6 +144,27 @@
 	/* Navigation links container */
 	.navBar.open .navLinks {
 		padding: 32px 0 216px;
+	}
+}
+
+/* Small tablet, window +
+ * https://material.io/design/layout/responsive-layout-grid.html#breakpoints
+ */
+@media screen and (min-width: 600px) {
+
+	/* NavBar */
+	.navBar {
+		height: 125px;
+	}
+
+	/* Backpages Xena logo */
+	.navBar.backPages > img {
+		max-height: 63px;
+	}
+
+	/* Logo */
+	.navBar img {
+		max-width: 225px;
 	}
 }
 

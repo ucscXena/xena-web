@@ -11,6 +11,7 @@ import {Link} from 'gatsby';
 
 // Images
 import headerLogo from '../../../images/logo/logo-ucsc@3x.png';
+import publicPrivate from '../../../images/logo/logo-public-private.png';
 
 // Styles
 import compStyles from './header.module.css';
@@ -47,8 +48,9 @@ class Header extends React.Component {
 		return (
 			<div>
 				<div className={globalStyles.wrapper}>
-					<div className={classNames(compStyles.navBar, {[compStyles.open]: this.state.menuOpen})}>
+					<div className={classNames(compStyles.navBar, {[compStyles.open]: this.state.menuOpen}, {[compStyles.backPages]: this.props.markdownPages})}>
 						<Link to='/'><img src={headerLogo} alt='UCSC Xena'/></Link>
+						{this.props.markdownPages ? <img src={publicPrivate} alt='Xena'/> : null}
 						{this.props.markdownPages ? null :
 							<div className={compStyles.navBarMenu} onClick={this.toggleMenu}><span/></div>}
 						{this.props.markdownPages ? null : <div className={getFontClass()}>
