@@ -47,6 +47,18 @@ module.exports = {
 			}
 		},
 		{
+			resolve: `gatsby-plugin-google-analytics`,
+			options: {
+				trackingId: 'UA-30159111-7',
+				// Puts tracking script in the head instead of the body
+				head: false,
+				// Optional https://www.gatsbyjs.org/packages/gatsby-plugin-google-analytics/#the-anonymize-option
+				anonymize: true,
+				// Optional - do not track
+				respectDNT: true,
+			},
+		},
+		{
 			resolve: `gatsby-plugin-mailchimp`,
 			options: {
 				endpoint: '//ucsc.us13.list-manage.com/subscribe/post?u=854efce54e145c49d29e0bb59&amp;id=65986d18f3',
