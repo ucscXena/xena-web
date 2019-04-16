@@ -160,10 +160,8 @@ class Index extends React.Component {
 				<div id='overview' className={globalStyles.wrapper}>
 					<div className={classNames(compStyles.overview, globalStyles.section, globalStyles.bgWhite)}>
 						<div className={classNames(globalStyles.contentCol4, globalStyles.heroContent)}>
-							<p className={fontStyles.mdBody1}>An online exploration tool for public and private
-								multi-omics
-								functional genomics and
-								clinical/phenotype data</p>
+							<p className={fontStyles.mdBody1}>An online exploration tool for public and private,
+								multi-omic and clinical/phenotype data</p>
 							<a className={classNames(globalStyles.xenaButton, globalStyles.yellow)} alt='Launch Xena'
 							   href='https://xenabrowser.net/' target='_blank' rel='noopener noreferrer'>Launch Xena</a>
 						</div>
