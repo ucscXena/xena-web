@@ -1,7 +1,7 @@
 ---
 path: "/discover/kaplan"
 date: "2019-02-21"
-title: "Perform a Kaplan-Meier survival analysis on any data"
+title: "Perform a Kaplan-Meier survival analysis"
 hrefLink: "../kaplan-survival-analysis"
 image: "./images/survivalPlot.png"
 ---
