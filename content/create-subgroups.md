@@ -20,11 +20,5 @@ The new two-subgroup column behaves like any other column and can be used in a K
 (**B**) After creating a new column with two subgroups. The user-generated column inserted on the left. Samples that matched the query of 'splice' were assigned a value of "true" and those that do not "false". The researcher has zoomed to a few samples at the top for a more detailed view. The figure shows that samples that have the splice site mutation (orange tick marks, column E) have lower expression of MET’s exon (column D). The splice mutation causes exon 14 skipping and results in the activation of MET (Kong-Beltran 2006, The Cancer Genome Atlas Research Network 2014). https://xenabrowser.net/?bookmark=748c42b0b49552004da53873950aad62 
 (**C**) Compare exon expression across the dynamically creaeted two subgroups. Subgroup labels are customized to "MET splice variant" and "MET splice wt" through display setting adjustment. https://xenabrowser.net/?bookmark=886a9d503a7fb5f14144cb690eefa945
 
-##User Guide
 [[xenaButtonPeach]]
 | [Learn More](https://ucsc-xena.gitbook.io/project/how-do-i/how-do-i-make-subgroups)
-
-##Advanced options
-Once the subgroup column is created, users can further customize group labels from "true" or "false" to for exmaple "wild type" or "EGFR mutant" by adjusting the column display settings.
-
-There is also an advanced option to create multiple subgroups (such as three, four, etc).
