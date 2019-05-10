@@ -10,15 +10,16 @@ author: "Mary Goldman"
 
 Xena offers two sources of normal tissue: TCGA's solid tisue normal samples GTEX which has expression data from normal tissue of individuals who do not have cancer.  
 
-## Example: Comparing MYC gene expression between GTEx normal colon tissue to TCGA colon adenocarcinom
+## Example: MYC expression
 
 ![example](/images/compare-tissue.png)
 
 ![example](/images/compare-tissue-chart.png)
 
-These two views show that MYC gene expression is highest in tumor samples.
+These two views compare MYC expression between GTEx normal colon tissue to TCGA colon adenocarcinoma. They show that MYC gene expression is highest in tumor samples.
 
 CHECK IT OUT: https://xenabrowser.net/?bookmark=2b707e21a992c2963e949b3e5241cc70
+
 CHECK IT OUT: https://xenabrowser.net/?bookmark=54a597bb0540b1a5fa8bff622d973e0c
 
 [[xenaButtonPeach]]
