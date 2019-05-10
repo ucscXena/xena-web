@@ -12,8 +12,6 @@ If you are looking to share data on a Xena Hub with a specific group of people. 
 
 ##Example: the Treehouse project
 ![figure](/images/LG_UCSC_GenomiceInstitute_Treehouse_Logo.png)
-[[caption]]
-| the Treehouse project (https://treehousegenomics.soe.ucsc.edu)
 
 An example of a public Xena Hub hosted by an institution is the Treehouse Hub, which is deployed by the Treehouse project. It hosts RNAseq gene expression data of pediatric cancer samples provided by Treehouse's clinical partners and repositories, harmonized with the UCSC RNAseq recompute compendium dataset of TCGA, TARGET and GTEx samples (Morozova 2017, Vivian 2017). This data is used to facilitate interpretation of a pediatric sample in the context of a large pan-cancer cohort, as all samples were processed by the same bioinformatics pipeline. Since the data hub is set up and hosted separately, Treehouse has complete control over the data and data access. They use the UCSC Xena platform to host and update their public data, allowing it to be downloaded and visualized.
 
