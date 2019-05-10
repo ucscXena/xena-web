@@ -24,3 +24,6 @@ Subgroup columns behave like any other column and can be used in a Kaplan-Meier 
 
 [[xenaButtonPeach]]
 | [Learn More](https://ucsc-xena.gitbook.io/project/how-do-i/how-do-i-make-subgroups)
+
+[[xenaButtonYellow]]
+| [Launch Xena](https://xenabrowser.net/)

@@ -18,3 +18,6 @@ When you click 'Bookmark' you will then need to click 'Copy Bookmark' to copy th
 
 [[xenaButtonPeach]]
 | [Learn More](https://ucsc-xena.gitbook.io/project/overview-of-features/bookmarks)
+
+[[xenaButtonYellow]]
+| [Launch Xena](https://xenabrowser.net/)
