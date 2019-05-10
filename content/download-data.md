@@ -11,6 +11,6 @@ author: "Mary Goldman"
 We download genomics source data from public repositories and wrangle them into a generic tabular or matrix format files.  For example, we download more than a thousand individual TCGA Breast cancer gene expression data files, compile them into a single tab-delimited file of gene expression data matrix. These easy-to-use pre-compiled data files can be easily imported into R, python, or a Jupyter notebook to be used in further bioinformatics analysis. 
 
 [[xenaButtonPeach]]
-| [Learn More] (https://ucsc-xena.gitbook.io/project/overview-of-features/download-data)
+| [Learn More](https://ucsc-xena.gitbook.io/project/overview-of-features/download-data)
 
 
