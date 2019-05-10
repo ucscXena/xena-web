@@ -16,4 +16,5 @@ When you click 'Bookmark' you will then need to click 'Copy Bookmark' to copy th
 
 ![example](/images/bookmark.png)
 
-[Help on bookmarks](https://ucsc-xena.gitbook.io/project/overview-of-features/bookmarks)
+[[xenaButtonPeach]]
+| [Learn More](https://ucsc-xena.gitbook.io/project/overview-of-features/bookmarks)
