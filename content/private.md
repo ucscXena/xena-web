@@ -14,6 +14,11 @@ Viewing your data, securely and privately, is easy with Xena. Your data stays on
 
 Before you begin, check our [data format specifications](https://ucsc-xena.gitbook.io/project/local-xena-hub/data-format-specifications) to ensure that your data meets them.
 
-Once your data is ready to go, go to [View My Data](https://xenabrowser.net/datapages/?addHub=https://local.xena.ucsc.edu:7223&host=https://local.xena.ucsc.edu:7223) to get started.
+Once your data is ready to go, click [View My Data](https://xenabrowser.net/datapages/?addHub=https://local.xena.ucsc.edu:7223&host=https://local.xena.ucsc.edu:7223) to get started.
 
-If you have any questions check out our [help pages](https://ucsc-xena.gitbook.io/project/local-xena-hub/getting-started) or [contact us](mailto:genome-cancer@soe.ucsc.edu).
+[[xenaButtonPeach]]
+| [Learn More](https://ucsc-xena.gitbook.io/project/local-xena-hub/getting-started)
+
+[[xenaButtonYellow]]
+| [Contact us](mailto:genome-cancer@soe.ucsc.edu)
+
