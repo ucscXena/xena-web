@@ -19,6 +19,3 @@ Once your data is ready to go, click [View My Data](https://xenabrowser.net/data
 [[xenaButtonPeach]]
 | [Learn More](https://ucsc-xena.gitbook.io/project/local-xena-hub/getting-started)
 
-[[xenaButtonYellow]]
-| [Contact us](mailto:genome-cancer@soe.ucsc.edu)
-
