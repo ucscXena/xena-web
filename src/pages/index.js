@@ -107,10 +107,6 @@ class Index extends React.Component {
 		return x.node.frontmatter.component === "discover";
 	}).map(n => n.node.frontmatter)[0];
 
-	twitter = this.allMarkdownRemark.filter((x) => {
-		return x.node.frontmatter.component === "twitter";
-	}).map(n => n.node.frontmatter)[0];
-
 	acknowledgmentSection = () => {
 		return (
 			<div className={globalStyles.wrapper}>
@@ -211,7 +207,7 @@ class Index extends React.Component {
 					</div>
 				</div>
 				{this.discover ? <Discover data={this.discover}/> : null}
-				{this.twitter ? <WhatsNew data={this.twitter}/> : null}
+				<WhatsNew/>
 				<div id='subscribe' className={globalStyles.wrapper}>
 					<div
 						className={classNames(globalStyles.section, globalStyles.bgWhite, globalStyles.separator, compStyles.subscribe)}>
@@ -273,7 +269,6 @@ export const query = graphql`
           hidePagePost
           hideImprovePage
           component
-          twitterHashtag
           hrefLink
           image {
             childImageSharp {

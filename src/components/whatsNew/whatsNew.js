@@ -7,9 +7,6 @@
 
 // Core dependencies
 import React from 'react';
-import Img from "gatsby-image"
-import {faTwitter} from '@fortawesome/free-brands-svg-icons';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 // Styles
 import compStyles from './whatsNew.module.css';
@@ -26,18 +23,7 @@ class WhatsNew extends React.Component {
 				<div
 					className={classNames(globalStyles.section, globalStyles.bgWhite, globalStyles.fixed, globalStyles.separator, compStyles.whatsNew)}>
 					<h5 className={fontStyles.sectionTitle}>What's New</h5>
-					<h6 className={fontStyles.sectionSubtitle}><a href='https://twitter.com/ucscxena' target='_blank'
-																  rel='noopener noreferrer'>
-						<span>@UCSCXena</span><span>{this.props.data.date}</span><FontAwesomeIcon icon={faTwitter}/></a>
-					</h6>
-					<div className={classNames(globalStyles.contentCol4)}>
-						<p className={classNames(fontStyles.mdBody1, fontStyles.sectionText)}>{this.props.data.title}</p>
-						<a href={this.props.data.hrefLink} target='_blank'
-						   rel='noopener noreferrer'>{this.props.data.hrefLink}</a>
-						<div>{this.props.data.twitterHashtag}</div>
-						<div className={compStyles.twitterImg}><Img fluid={this.props.data.image.childImageSharp.fluid}
-																	alt='Twitter Image'/></div>
-					</div>
+					<a className="twitter-timeline" data-width="380" data-theme="light" data-tweet-limit="1" data-link-color="#1a535c" data-chrome="noborders nofooter noheader transparent" href="https://twitter.com/UCSCXena">Tweets by UCSCXena</a>
 				</div>
 			</div>
 		);
