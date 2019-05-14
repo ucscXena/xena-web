@@ -61,7 +61,7 @@ class Header extends React.Component {
 							<Link to='/#whatsnew' onClick={this.state.menuOpen ? this.toggleMenu : null}>What's
 								New</Link>
 							<Link to='/cite-us' onClick={this.state.menuOpen ? this.toggleMenu : null}>Cite Us</Link>
-							<Link to='/#subscribe'
+							<Link to='/#whatsnew'
 								  onClick={this.state.menuOpen ? this.toggleMenu : null}>Subscribe</Link>
 						</div>}
 					</div>
