@@ -17,7 +17,6 @@ import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 // App dependencies
 import Discover from '../components/discover/discover';
 import Layout from '../components/layout';
-import WhatsNew from '../components/whatsNew/whatsNew';
 
 // Images
 import xenaHero from '../../images/jumbotron/xena-public-private@3x.png';
@@ -105,10 +104,6 @@ class Index extends React.Component {
 
 	discover = this.allMarkdownRemark.filter((x) => {
 		return x.node.frontmatter.component === "discover";
-	}).map(n => n.node.frontmatter)[0];
-
-	twitter = this.allMarkdownRemark.filter((x) => {
-		return x.node.frontmatter.component === "twitter";
 	}).map(n => n.node.frontmatter)[0];
 
 	acknowledgmentSection = () => {
@@ -200,7 +195,8 @@ class Index extends React.Component {
 							</div>
 							<div
 								className={classNames(globalStyles.contentCol4, compStyles.private)}>
-								<h5 className={fontStyles.sectionTitle}>View your own private data, or data from a paper</h5>
+								<h5 className={fontStyles.sectionTitle}>View your own private data, or data from a
+									paper</h5>
 								<h6 className={fontStyles.sectionSubtitle}>View your data, securely and privately. Our
 									step-by-step wizard will guide you
 									whether you're on a Windows or Mac.</h6>
@@ -211,27 +207,36 @@ class Index extends React.Component {
 					</div>
 				</div>
 				{this.discover ? <Discover data={this.discover}/> : null}
-				{this.twitter ? <WhatsNew data={this.twitter}/> : null}
-				<div id='subscribe' className={globalStyles.wrapper}>
-					<div
-						className={classNames(globalStyles.section, globalStyles.bgWhite, globalStyles.separator, compStyles.subscribe)}>
-						<h6 className={classNames(fontStyles.sectionSubtitle, fontStyles.light)}>
-							<span>We’re constantly improving UCSC Xena.</span><span>Subscribe to our newsletter and stay up to date.</span>
-						</h6>
-						<form method='post' noValidate>
-							<div>
-								<input type="email" placeholder="Your email address" value={this.state.value}
-									   onChange={this.handleChange} required/>
-								<div className={classNames(compStyles.subscribeResponse, fontStyles.mdCaption)}>
-									{this.state.status === 'error' && (
-										<div dangerouslySetInnerHTML={{__html: this.state.msg}}/>)}
-									{this.state.status === 'success' ? <div>Thank you for subscribing!</div> : null}
-								</div>
+				<div className={globalStyles.wrapper}>
+					<div id='whatsnew'
+						 className={classNames(globalStyles.section, globalStyles.bgWhite, globalStyles.fixed, globalStyles.separator, compStyles.whatsNew)}>
+						<h5 className={fontStyles.sectionTitle}>What's New</h5>
+						<div>
+							<a className="twitter-timeline" data-width="450" data-theme="light" data-tweet-limit="3"
+							   data-link-color="#1a535c" data-chrome="nofooter noheader transparent"
+							   href="https://twitter.com/UCSCXena">Tweets by UCSCXena</a>
+							<div className={compStyles.subscribe}>
+								<h6 className={classNames(fontStyles.sectionSubtitle, fontStyles.light)}>
+									<span>We’re constantly improving UCSC Xena.</span><span>Subscribe to our newsletter and stay up to date.</span>
+								</h6>
+								<form method='post' noValidate>
+									<div>
+										<input type="email" placeholder="Your email address" value={this.state.value}
+											   onChange={this.handleChange} required/>
+										<div className={classNames(compStyles.subscribeResponse, fontStyles.mdCaption)}>
+											{this.state.status === 'error' && (
+												<div dangerouslySetInnerHTML={{__html: this.state.msg}}/>)}
+											{this.state.status === 'success' ?
+												<div>Thank you for subscribing!</div> : null}
+										</div>
+									</div>
+									<button className={classNames(globalStyles.xenaButton, globalStyles.peach)}
+											type='submit'
+											onClick={this.handleSubmit}>Subscribe
+									</button>
+								</form>
 							</div>
-							<button className={classNames(globalStyles.xenaButton, globalStyles.peach)} type='submit'
-									onClick={this.handleSubmit}>Subscribe
-							</button>
-						</form>
+						</div>
 					</div>
 				</div>
 				<div className={globalStyles.wrapper}>
@@ -273,7 +278,6 @@ export const query = graphql`
           hidePagePost
           hideImprovePage
           component
-          twitterHashtag
           hrefLink
           image {
             childImageSharp {
