@@ -200,7 +200,7 @@ class Index extends React.Component {
 								<h6 className={fontStyles.sectionSubtitle}>View your data, securely and privately. Our
 									step-by-step wizard will guide you
 									whether you're on a Windows or Mac.</h6>
-								<Link className={classNames(globalStyles.xenaButton, globalStyles.peach)} to='/private'>Learn
+								<Link className={classNames(globalStyles.xenaButton, globalStyles.peach)} to='/private-hubs'>Learn
 									More</Link>
 							</div>
 						</div>
