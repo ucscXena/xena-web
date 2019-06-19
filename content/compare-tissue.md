@@ -8,7 +8,7 @@ author: "Mary Goldman"
 [[contentHero]]
 | Use Xena to compare TCGA tumor samples to GTEx normal samples to see if your gene or transcript is up- or down-regulated in one or more cancer types.
 
-Xena offers two sources of normal tissue: TCGA's solid tisue normal samples GTEX which has expression data from normal tissue of individuals who do not have cancer.  
+Xena offers two sources of normal tissue: TCGA's solid tisue normal samples from individuals with cancer, and GTEX normal tissue from individuals who do not have cancer.  
 
 ## Example: MYC expression
 
