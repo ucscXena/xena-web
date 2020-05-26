@@ -97,6 +97,7 @@ jobs:
     - image: circleci/node:10-jessie
     shell: /bin/bash --login
     steps:
+    - run: sudo apt-key update
     - run: sudo apt-get update
     - run: sudo apt-get install python-pip
     - run: sudo apt-get install python-dev
@@ -113,6 +114,7 @@ jobs:
     - image: circleci/node:10-jessie
     shell: /bin/bash --login
     steps:
+    - run: sudo apt-key update
     - run: sudo apt-get update
     - run: sudo apt-get install python-pip
     - run: sudo apt-get install python-dev
