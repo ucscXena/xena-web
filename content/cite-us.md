@@ -5,7 +5,6 @@ hidePagePost: true
 hideImprovePage: true
 ---
 
-<h4>The UCSC Xena platform for public and private cancer genomics data visualization and interpretation</h4>
+You've run your analysis and are ready to publish your paper - congratulations! Cite the paper below to thank Xena and keep our project funded.
 
-Mary Goldman, Brian Craft, Mim Hastie, Kristupas Repečka, Akhil Kamath, Fran McDade, Dave Rogers, Angela N Brooks, Jingchun Zhu, David Haussler\
-bioRxiv 326470; doi: https://doi.org/10.1101/326470
+<h4>Goldman, M.J., Craft, B., Hastie, M. et al. Visualizing and interpreting cancer genomics data via the Xena platform. Nat Biotechnol (2020). <a href="https://doi.org/10.1038/s41587-020-0546-8">https://doi.org/10.1038/s41587-020-0546-8</a> </h4>
