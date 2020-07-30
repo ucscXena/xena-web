@@ -17,7 +17,7 @@ Xena supports virtually any functional genomics data, including SNVs, INDELs, la
 |-----------------------|:-------:|:-----------|
 | [TCGA](https://tcga.xenahubs.net)                   | 12,470 | copy number, gene-, exon-, miRNA-, and protein-expression, somatic mutation, DNA methylation, survival, and clinical data |
 | [Pan-Cancer Atlas](https://pancanatlas.xenahubs.net)| 12,591 | copy number, gene-, miRNA-, and protein-expression, somatic mutation, DNA methylation, molecular subtypes, multiple curated survival endpoints |
-| [ICGC](https://icga.xenahubs.net)                  | 17,697 | copy number, gene expression, somatic mutation |
+| [ICGC](https://icgc.xenahubs.net)                  | 17,697 | copy number, gene expression, somatic mutation |
 | [UCSC RNA-seq compendium](https://toil.xenahubs.net)| 19,131 | TCGA, TARGET, and GTEx gene- and transcript-expression |
 | [GDC](https://gdc.xenahubs.net)                     | 20,157 | TCGA and TARGET copy number, somatic mutations, gene- and miRNA-expression, DNA methylation, overall survival, and clinical data |
 | [TCGA ATAC-seq](https://atacseq.xenahubs.net)         | 404    | ATAC-seq peak signal |
