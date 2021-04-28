@@ -11,4 +11,4 @@ You are ready to publish your paper - Congratulations! Cite the paper below to t
 
 You can also read our paper on bioRxiv: <a href="https://www.biorxiv.org/content/10.1101/326470v6">https://www.biorxiv.org/content/10.1101/326470v6</a>
 
-Check out our <a href="https://ucscxena.github.io"<Publication Page</a> where we highlight papers that use Xena. If you want to be featured, just put a link to your paper on Twitter and <a href="https://twitter.com/UCSCXena">tag us</a>.
+Check out our <a href="https://ucscxena.github.io">Publication Page</a> where we highlight papers that use Xena. If you want to be featured, just put a link to your paper on Twitter and <a href="https://twitter.com/UCSCXena">tag us</a>.
