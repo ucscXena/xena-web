@@ -10,6 +10,12 @@ author: "Mary Goldman"
 
 Xena offers two sources of normal tissue: TCGA's solid tisue normal samples from individuals with cancer, and GTEX normal tissue from individuals who do not have cancer.  
 
+[[xenaButtonPeach]]
+| [Learn More](https://ucsc-xena.gitbook.io/project/how-do-i/tumor-vs-normal)
+
+[[xenaButtonYellow]]
+| [Launch Xena](https://xenabrowser.net/)
+
 ## Example: MYC expression
 
 ![example](/images/compare-tissue.png)
@@ -18,12 +24,11 @@ Xena offers two sources of normal tissue: TCGA's solid tisue normal samples from
 
 These two views compare MYC expression between GTEx normal colon tissue to TCGA colon adenocarcinoma. They show that MYC gene expression is highest in tumor samples.
 
-CHECK IT OUT: https://xenabrowser.net/?bookmark=2b707e21a992c2963e949b3e5241cc70
-
-CHECK IT OUT: https://xenabrowser.net/?bookmark=54a597bb0540b1a5fa8bff622d973e0c
-
 [[xenaButtonPeach]]
-| [Learn More](https://ucsc-xena.gitbook.io/project/how-do-i/tumor-vs-normal)
+| [Check out first view](https://xenabrowser.net/?bookmark=2b707e21a992c2963e949b3e5241cc70)
 
 [[xenaButtonYellow]]
-| [Launch Xena](https://xenabrowser.net/)
+| [Check out second view](https://xenabrowser.net/?bookmark=54a597bb0540b1a5fa8bff622d973e0c)
+
+
+
