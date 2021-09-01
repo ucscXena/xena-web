@@ -10,6 +10,8 @@ author: "Mary Goldman"
 
 Viewing your data, securely and privately, is easy with Xena. Your data stays on your computer and is never uploaded to the web. You can load all major data types including expression, copy number variation, mutation, clinical/phenotype data, and more. The Xena Browser doesn't differentiate between your data and our data: you can use same visualizations and tools no matter where the data is located.
 
+![Screenshot of private local Hubs page](/images/MyHubScreenshot.png)
+
 [[xenaButtonPeach]]
 | [Learn More about viewing your private data](https://ucsc-xena.gitbook.io/project/local-xena-hub/getting-started)
 
