@@ -98,9 +98,8 @@ jobs:
     shell: /bin/bash --login
     steps:
     - run: sudo apt-get update
-    - run: sudo apt-get install --force-yes python-pip
-    - run: sudo apt-get install --force-yes python-dev
-    - run: pip install awscli --upgrade --user
+    - run: sudo apt-get install --force-yes python3 python3-pip python3-dev
+    - run: pip3 install awscli --upgrade --user
     - run: echo 'export PATH="~/.local/bin:$PATH"' >> $BASH_ENV
     - checkout
     - attach_workspace:
@@ -114,9 +113,8 @@ jobs:
     shell: /bin/bash --login
     steps:
     - run: sudo apt-get update
-    - run: sudo apt-get install --force-yes python-pip
-    - run: sudo apt-get install --force-yes python-dev
-    - run: pip install awscli --upgrade --user
+    - run: sudo apt-get install --force-yes python3 python3-pip python3-dev
+    - run: pip3 install awscli --upgrade --user
     - run: echo 'export PATH="~/.local/bin:$PATH"' >> $BASH_ENV
     - checkout
     - attach_workspace:
