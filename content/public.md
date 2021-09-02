@@ -12,10 +12,10 @@ We provide interactive online visualization of seminal cancer genomics datasets,
 
 Xena supports virtually any functional genomics data, including SNVs, INDELs, large structural variants, copy number variation, gene-, transcript-, exon-, miRNA-, LncRNA-, protein-expressions, DNA methylation, ATAC-seq signals, phenotypic/clinical annotations, and higher-level derived genomic parameters.
 
+![example](/images/PublicDataLogos.png)
+
 [[xenaButtonPeach]]
 | [Learn More about the public data we host](https://ucsc-xena.gitbook.io/project/public-data-we-host)
-
-<br/>
 
 [[xenaButtonYellow]]
 | [Launch Xena](https://xenabrowser.net/)
