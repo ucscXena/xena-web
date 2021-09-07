@@ -6,9 +6,9 @@ author: "Mary Goldman"
 ---
 
 [[contentHero]]
-| Get your data (e.g. from a publication) out to a wider audience for both visualization and download. Set up a Xena Data Hub, load up your data, configure it to be public, and share the URL.
+| Make your data available for visualization and download. Set up a Xena Data Hub, load up your data, configure it to be public, and share the URL.
 
-If you are looking to share data on a Xena Hub with a specific group of people. Xena Hubs can be set up on any server or in the cloud. You control who has access to the Xena Hub by controlling who has access to the server on which it is hosted. To make your data publicly available, simply make the server open to the web.
+Xena hubs can be for either a specific group of people or for the public. Set up a Xena Hubs on a server or in the cloud and then control access to the Xena Hub by controlling who has access to the server on which it is hosted. To make your data publicly available, simply make the server open to the web.
 
 ##Example: the Treehouse project
 ![figure](/images/LG_UCSC_GenomiceInstitute_Treehouse_Logo.png)
@@ -17,7 +17,6 @@ An example of a public Xena Hub hosted by an institution is the Treehouse Hub, w
 
 [[xenaButtonYellow]]
 | [Check out Treehouse](https://treehousegenomics.soe.ucsc.edu)
-
 
 [[xenaButtonPeach]]
 | [Learn More](https://ucsc-xena.gitbook.io/project/local-xena-hub/hubs-for-institutions-collaborations-labs-and-larger-projects)
