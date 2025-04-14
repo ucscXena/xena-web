@@ -166,10 +166,10 @@ class Index extends React.Component {
 					<div className={globalStyles.wrapper}>
 						<div className={classNames(globalStyles.section)}>
 							<div className={classNames(globalStyles.contentCol4, globalStyles.heroContent)}>
-								<h5 className={fontStyles.sectionTitle}>Tutorials and walkthroughs</h5>
+								<h5 className={fontStyles.sectionTitle}>Tutorials and webinars</h5>
 								<p className={classNames(fontStyles.mdBody1, fontStyles.sectionText)}>Don't know where
 									to
-									start? Jump in with one of our tutorials or "How do I …" walkthroughs</p>
+									start? Jump in with one of our tutorials or sign up for a webinar</p>
 								<a href='https://ucsc-xena.gitbook.io/project/tutorials' alt='Tutorials' target='_blank'
 								   rel='noopener noreferrer'
 								   className={classNames(globalStyles.xenaButton, globalStyles.white)}
