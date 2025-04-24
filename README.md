@@ -1,2 +1,2 @@
 # xena-web
-landing page
+Landing page for UCSC Xena
